@@ -1,5 +1,5 @@
 .jumbotron {
-	background-color:
+	background-color: ;
 }
 
 #logo {
@@ -64,9 +64,27 @@ h3 {
 	text-align: right;
 }
 
+.panel-body {
+	color: blue;
+}
+.panel-heading > h4 {
+	background-color: #336699;
+}
+.panel-title {
+	color: white;
+	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-plus"></span>Collapsible Group Item</a>
+}
+.rapa  {
+	width: 100%;
+	height: auto;
+}
 .contactimage {
- background-image: url("img/landscape.jpg");
- background-size: cover;
+ 	background-image: url("../img/landscape.jpg");
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	width: 100%;
+ 	height: auto;
+ 	margin-bottom: 1.5em;
 }
 
 .glyphicon {
