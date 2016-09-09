@@ -10,9 +10,6 @@
 	max-height: 200px;
 }
 
-.info {
-
-}
 
 h1, 
 h2,
@@ -57,11 +54,15 @@ h3 {
 	-webkit-transition: color 600ms;
 }
 
+#carousel-example-generic {
+}
+
 #footing1 {
 	float: left;
 }
-#footing2 {
+#footing2 > p{
 	text-align: right;
+	color: #336699;
 }
 
 .panel-body {
@@ -72,7 +73,6 @@ h3 {
 }
 .panel-title {
 	color: white;
-	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-plus"></span>Collapsible Group Item</a>
 }
 .rapa  {
 	width: 100%;
