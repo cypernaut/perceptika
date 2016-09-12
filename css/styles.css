@@ -6,6 +6,43 @@
 	}
 }
 
+@media only screen and (min-width : 1225px) {
+    .desktop-img {
+        display: block;
+    }
+    .tablet-img {
+        display: none;
+    }
+    .smartphone-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width : 401px) and (max-width : 1024px){
+    .desktop-img {
+        display: none;
+    }
+    .tablet-img {
+        display: block;
+    }
+    .smartphone-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .desktop-img {
+        display: none;
+    }
+    .tablet-img {
+        display: none;
+    }
+    .smartphone-img {
+        display: block;
+    }
+}
+
+
 .jumbotron {
 	background-color: ;
 }
@@ -108,3 +145,4 @@ h3 {
 	color: #ff0;
 	transition: color 900ms;
 }
+
