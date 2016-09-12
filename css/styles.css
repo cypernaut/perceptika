@@ -1,3 +1,11 @@
+@media screen and (max-width: 768px) {
+	#carousel-example-generic {
+		padding-top:  30px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 .jumbotron {
 	background-color: ;
 }
@@ -32,8 +40,13 @@ h3 {
 	position: static;
 	width: 100%;
 	top: 0;
+	z-index: 1;
 }
-
+.carousel {
+	margin-top: -60px;
+  margin-left: -60px;
+  margin-right: -60px;
+}
 .nav ul li {
 	display: inline-block;
 	padding: 20px 10px 20px;
