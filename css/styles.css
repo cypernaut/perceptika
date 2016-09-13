@@ -1,3 +1,7 @@
+.img-responsive {
+	display: none;
+}
+
 @media screen and (max-width: 768px) {
 	#carousel-example-generic {
 		padding-top:  30px;
@@ -8,37 +12,37 @@
 
 @media only screen and (min-width : 1225px) {
     .desktop-img {
-        display: block;
+        display: block; !important
     }
     .tablet-img {
-        display: none;
+        display: none; !important
     }
     .smartphone-img {
-        display: none;
+        display: none; !important
     }
 }
 
 @media only screen and (min-width : 401px) and (max-width : 1024px){
     .desktop-img {
-        display: none;
+        display: none; !important
     }
     .tablet-img {
-        display: block;
+        display: block; !important
     }
     .smartphone-img {
-        display: none;
+        display: none; !important
     }
 }
 
 @media only screen and (max-width : 400px) {
     .desktop-img {
-        display: none;
+        display: none; !important
     }
     .tablet-img {
-        display: none;
+        display: none; !important
     }
     .smartphone-img {
-        display: block;
+        display: block; !important
     }
 }
 
