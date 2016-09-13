@@ -1,6 +1,3 @@
-.img-responsive {
-	display: none;
-}
 
 @media screen and (max-width: 768px) {
 	#carousel-example-generic {
@@ -12,37 +9,37 @@
 
 @media only screen and (min-width : 1225px) {
     .desktop-img {
-        display: block; !important
+        display: block !important;
     }
     .tablet-img {
-        display: none; !important
+        display: none !important;
     }
     .smartphone-img {
-        display: none; !important
+        display: none !important;
     }
 }
 
 @media only screen and (min-width : 401px) and (max-width : 1024px){
     .desktop-img {
-        display: none; !important
+        display: none !important;
     }
     .tablet-img {
-        display: block; !important
+        display: block !important;
     }
     .smartphone-img {
-        display: none; !important
+        display: none !important;
     }
 }
 
 @media only screen and (max-width : 400px) {
     .desktop-img {
-        display: none; !important
+        display: none !important;
     }
     .tablet-img {
-        display: none; !important
+        display: none !important;
     }
     .smartphone-img {
-        display: block; !important
+        display: block !important;
     }
 }
 
