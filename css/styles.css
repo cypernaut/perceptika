@@ -43,7 +43,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-	#facebook-link {
+	#facebook-button {
 		display: none;
 	}
 }
@@ -78,8 +78,12 @@ h3 {
 	font-family: Georgia, Cambria, Palatino, Times, serif;
 }
 
+#support {
+	padding-right: 70px;
+}
+
 #aims-description {
-	padding-left: 40px;
+	padding-left: 60px;
 }
 
 #aims-list {
@@ -95,6 +99,7 @@ h3 {
 	position: static;
 	padding-left: 20px;
 	top: 0;
+	float: right;
 	z-index: 1;
 }
 .carousel {
