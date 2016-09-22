@@ -9,48 +9,56 @@
 		<title>
 			Vereinsziele 
 		</title>	
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template go here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 	</head>
 <body>
  <div class="container">
-  <div class="nav">
-      <ul>
-        <li><a href="contact.html">Kontakt</a></li>
-        <li><a href="#">Mitglied werden</a></li>
-        <li><a href="#">Downloads</a></li>
-        <li><a href="#">Zentren</a></li>
-        <li><a href="about.html">Studienreisen</a></li>
-        <li><a href="aims.html">Vereinsziele</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </div>
+  <nav class="navbar navbar-default">
+        <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Navigation ein-/ausblenden</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="#">Mitglied werden</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Zentren</a></li>
+            <li><a href="about.html">Studienreisen</a></li>
+            <li><a href="aims.html">Vereinsziele</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-      
-
-        <div class=col-md-6 col-lg-6>
-          <h1>Perceptika e.V.</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Perceptika</h1>
           <p>Verein für Integrative Entwicklung</p>
         </div><!-- /container -->
-        <div class=col-md-6 col-lg-6>
+        <div class="col-sm-6">
           <img id="logo" src="img/perceptika-logo.png" alt="logo">
         </div>
       </div>
     </div><!-- /jumbotron -->
 
-<div class="container">
-	<div class="col-md-6 col-lg-6 column">
+<div class="row">
+	<div class="col-xs-12 col-md-5 column" id="aims-description">
 		<h1> Vereinsziele 
 		</h1>
 		<p>Durch einen interkulturellen Austausch von ganz neuer Qualität soll ein Beitrag zur positiven Veränderung der Gesellschaft geschaffen werden. PERCEPTIKA e.V. dient hierbei als „Interkultureller Dolmetscher“, welcher das nötige theoretische Wissen und dessen praktische Anwendung vermittelt. Dabei handelt es sich um altüberlieferte Wissensstrukturen, Lebensweisen und Werte, die die persönliche und spirituelle Weiterentwicklung des Menschen zum Ziel haben.</p>
-        <p>Mit unseren Aktionen fördern wir vor allem den interkulturell-spirituellen Bildungsaustausch und die Entwicklung des geistig­-spirituellen Bewusstseins. Der durch die verschiedenen Methoden zu erreichende Erkenntnisgewinn kann dann zu individueller Bewusstseins­- und Wahrnehmungserweiterung führen.</p>
+    <p>Mit unseren Aktionen fördern wir vor allem den interkulturell-spirituellen Bildungsaustausch und die Entwicklung des geistig­-spirituellen Bewusstseins. Der durch die verschiedenen Methoden zu erreichende Erkenntnisgewinn kann dann zu individueller Bewusstseins­- und Wahrnehmungserweiterung führen.</p>
 		</div>
-	<div class="col-md-6 col-lg-6 column">
+	<div class="col-xs-12 col-md-6 column">
 		<h3>In der Satzung festgehaltene Vereinsziele:</h3>
 		<ul id="aims-list">
 			<li>
@@ -74,21 +82,21 @@
       <footer>
     <div class="jumbotron">
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-4" id="footing1">
+        <div class="col-xs-6 col-md-4" id="footing1">
          <a href="#"> Imprint </a>
         </div>
-        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
-          
+        <div class="col-md-4" id="facebook-link">
+          <a href="http://facebook.com/perceptika.de">Follow us on Facebook
+          </a>
         </div>
-        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-4" id="footing2">
+        <div class="col-xs-6 col-md-4" id="footing2">
         <p><span class="glyphicon glyphicon-copyright-mark" style="margin-right:2px"> </span>Perceptika e.V. 2016</p>
           </div>
 
-    </div>
     </footer>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Bootstrap core JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
 </body>
 </html>
