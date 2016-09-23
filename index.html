@@ -18,10 +18,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-  <div class="container">
-  <nav class="navbar navbar-default">
-        <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+  <body data-spy="scroll" data-target=".navbar">
+
+<!--navbar starts here-->
+  
+  <div class="container-fluid">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Navigation ein-/ausblenden</span>
@@ -29,203 +31,396 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+            <div class="perceptika navbar-brand"><a href="#">Perceptika</a> </div>
+            
         </div>
 
         <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="#">Mitglied werden</a></li>
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">Zentren</a></li>
-            <li><a href="reisen.html">Studienreisen</a></li>
-            <li><a href="aims.html">Vereinsziele</a></li>
-            <li><a href="#">Home</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li id="hometitle"><a href="#contact">Kontakt</a></li>
+            <li><a href="#mitglied">Mitglied werden</a></li>
+            <li><a href="#download">Downloads</a></li>
+            <li id="centretitle"><a href="#centre">Zentren</a></li>
+            <li><a href="#reisen">Studienreisen</a></li>
+            <li><a href="#aims">Vereinsziele</a></li>
+            <li><a href="#home">Home</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="9"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="10"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="11"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-babas.jpg" alt="Ghana Festival Babas">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-babas-1024.jpg" alt="Ghana Festival Babas">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-babas-400.jpg" alt="Ghana Festival Babas">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Religious authorities</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-ritualistic-dance-in-the-rain.jpg" alt="Ghana Festival Ritualistic dance in the rain">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-ritualistic-dance-in-the-rain.jpg" alt="Ghana Festival Ritualistic dance in the rain">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-ritualistic-dance-in-the-rain-400.jpg" alt="Ghana Festival Ritualistic dance in the rain">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Ritualistic dance</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-symbols.jpg" alt="Ghana Festival Symbols">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-symbols-1024.jpg" alt="Ghana Festival Symbols">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-symbols-400.jpg" alt="Ghana Festival Symbols">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Symbols of religious practice</p>
-      </div>
-    </div>    
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-music-group.jpg" alt="Ghana Festival">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-music-group-1024.jpg" alt="Ghana Festival">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-music-group-400.jpg" alt="Ghana Festival">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Musical group posing</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-musicians.jpg" alt="Ghana Festival musicians">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-musicians.jpg" alt="Ghana Festival musicians">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-musicians.jpg" alt="Ghana Festival musicians">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Musicians</p>
-      </div>
-    </div>  
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-women.jpg" alt="Ghana Festival women">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-women-1024.jpg" alt="Ghana Festival women">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-women-400.jpg" alt="Ghana Festival women">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Women in traditional clothes</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-presentation.jpg" alt="Ghana Festival presentation">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-presentation-1024.jpg" alt="Ghana Festival presentation">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-presentation-400.jpg" alt="Ghana Festival presentation">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Presentation of festival members</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-public.jpg" alt="Ghana Festival Public">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-public-1024.jpg" alt="Ghana Festival Public">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-public-400.jpg" alt="Ghana Festival Public">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Public in traditional clothes</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-relgious-authorities.jpg" alt="Ghana Festival Authorities">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-relgious-authorities-1024.jpg" alt="Ghana Festival Authorities">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-relgious-authorities-400.jpg" alt="Ghana Festival Authorities">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Religious authorities</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-ritual.jpg" alt="Ghana Festival Ritual">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-ritual-1024.jpg" alt="Ghana Festival Ritual">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-ritual-400.jpg" alt="Ghana Festival Ritual">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Animistic ritual</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="img-responsive desktop-img" src="img/selection/ghana-festival-women-with-flowers.jpg" alt="Ghana Festival women with flowers">
-      <img class="img-responsive tablet-img" src="img/selection/ghana-festival-women-with-flowers-1024.jpg" alt="Ghana Festival women with flowers">
-      <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-women-with-flowers-400.jpg" alt="Ghana Festival women with flowers">
-      <div class="carousel-caption">
-        <h3>Ghana Festival</h3>
-        <p>Women with flowers</p>
-      </div>
-    </div>
+  <div class="container-fluid">
+    <div class="jumbotron"> 
+                <div class="row" id="verein">
+                  <div class="col-xs-12 col-sm-5 col-lg-4 col-lg-offset-1">
+                    <h1>Perceptika</h1>
+                    <p>Verein für Integrative Entwicklung</p>
+                  </div><!-- /container -->
+                  <br>
+                  <br>
+                  <div class="col-xs-11 col-sm-7 col-lg-6">
+                    <img id="logo" src="img/perceptika-logo.png" alt="logo"><a href="index.html"></a>
+                  </div>
+                </div>
+    </div><!-- /jumbotron -->
   </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <h1>Perceptika</h1>
-          <p>Verein für Integrative Entwicklung</p>
-        </div><!-- /container -->
-        <br>
-        <br>
-        <div class="col-xs-12 col-sm-6">
-          <img id="logo" src="img/perceptika-logo.png" alt="logo"><a href="index.html"></a>
-        </div>
-      </div>
 
-
-
-
-    </div><!-- /jumbotron -->
-    <div class=container> 
-
-      <!-- Example row of columns -->
+  <div class="container" id="home"> <!-- container aims -->
+      <br>
       <div class="row">
         <div class="col-xs-12 col-md-6 column">
           <h2>Altüberliefertes Heilwissen im Kontext praktischer Anwendbarkeit</h2>
           <p>In unterschiedlichen Kulturen weltweit sind schamanische Heiltraditionen bereits seit Jahrtausenden bekannt. Dem Verein liegt die Überzeugung zugrunde, dass durch die Anwendung dieses alten Heil­ und Therapiewissens vielen aktuellen ökologischen und gesellschaftlichen Herausforderungen entgegengewirkt werden kann. </p>
           <p> PERCEPTIKA e.V. ist offen für alle Menschen, die nach einem tieferen Sinn, der Weiterentwicklung ihrer Wahrnehmung und nach Selbstverwirklichung streben. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div><!-- /col -->
         <div class="col-xs-12 col-md-6 column" id="support">
           <h2>Förderung des spirituellen interkulturellen Austauschs</h2>
           <p>Der Verein für Integrative Entwicklung schafft eine gemeinsame Plattform, die über kulturelle und nationale Grenzen hinweg, Räume der spirituellen Verständigung über die großen Lebensfragen und die innere Natur des Menschen, eröffnet. Mit unseren Projekten fördern wir die Allgemeinheit auf geistigem, seelischem und sittlichem Gebiet und derzeit besonders den spirituellen interkulturellen Austausch.
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#aims-description" role="button">Mehr zu den Zielen unserer Arbeit erfahren &raquo;</a></p>
         </div><!-- /col -->
-      </div>
-      <!-- /row -->
-</div>
-      <footer>
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-xs-6 col-md-4" id="footing1">
-         <a href="#"> Imprint </a>
-        </div>
-        <div class="col-md-4" id="facebook-button">
-          <a href="http://facebook.com/perceptika.de">Follow us on Facebook
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-4" id="footing2">
-        <p><span class="glyphicon glyphicon-copyright-mark" style="margin-right:2px"> </span>Perceptika e.V. 2016</p>
-          </div>
+      </div><!-- /row -->
+  </div>
 
-    </footer>    </div> <!-- /container -->
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="container" id="centre">
+    <br>
+    <br>
+    <h1>
+    Zentrum für afrikanisches Heilwissen
+    </h1> 
+    <br>
+    <div class="jumbotron">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-babas.jpg" alt="Ghana Festival Babas">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-babas-1024.jpg" alt="Ghana Festival Babas">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-babas-400.jpg" alt="Ghana Festival Babas">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Religious authorities</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-ritualistic-dance-in-the-rain.jpg" alt="Ghana Festival Ritualistic dance in the rain">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-ritualistic-dance-in-the-rain.jpg" alt="Ghana Festival Ritualistic dance in the rain">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-ritualistic-dance-in-the-rain-400.jpg" alt="Ghana Festival Ritualistic dance in the rain">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Ritualistic dance</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-symbols.jpg" alt="Ghana Festival Symbols">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-symbols-1024.jpg" alt="Ghana Festival Symbols">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-symbols-400.jpg" alt="Ghana Festival Symbols">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Symbols of religious practice</p>
+                </div>
+              </div>    
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-music-group.jpg" alt="Ghana Festival">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-music-group-1024.jpg" alt="Ghana Festival">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-music-group-400.jpg" alt="Ghana Festival">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Musical group posing</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-musicians.jpg" alt="Ghana Festival musicians">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-musicians.jpg" alt="Ghana Festival musicians">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-musicians.jpg" alt="Ghana Festival musicians">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Musicians</p>
+                </div>
+              </div>  
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-women.jpg" alt="Ghana Festival women">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-women-1024.jpg" alt="Ghana Festival women">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-women-400.jpg" alt="Ghana Festival women">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Women in traditional clothes</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-presentation.jpg" alt="Ghana Festival presentation">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-presentation-1024.jpg" alt="Ghana Festival presentation">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-presentation-400.jpg" alt="Ghana Festival presentation">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Presentation of festival members</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-public.jpg" alt="Ghana Festival Public">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-public-1024.jpg" alt="Ghana Festival Public">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-public-400.jpg" alt="Ghana Festival Public">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Public in traditional clothes</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-relgious-authorities.jpg" alt="Ghana Festival Authorities">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-relgious-authorities-1024.jpg" alt="Ghana Festival Authorities">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-relgious-authorities-400.jpg" alt="Ghana Festival Authorities">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Religious authorities</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-ritual.jpg" alt="Ghana Festival Ritual">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-ritual-1024.jpg" alt="Ghana Festival Ritual">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-ritual-400.jpg" alt="Ghana Festival Ritual">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Animistic ritual</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive desktop-img" src="img/selection/ghana-festival-women-with-flowers.jpg" alt="Ghana Festival women with flowers">
+                <img class="img-responsive tablet-img" src="img/selection/ghana-festival-women-with-flowers-1024.jpg" alt="Ghana Festival women with flowers">
+                <img class="img-responsive smartphone-img" src="img/selection/ghana-festival-women-with-flowers-400.jpg" alt="Ghana Festival women with flowers">
+                <div class="carousel-caption">
+                  <h3>Ghana Festival</h3>
+                  <p>Women with flowers</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+      </div>
+    </div> <!-- /container fluid -->
+  </div>
+  <div class="container"> 
+    <div id="aims">
+    <br>
+    <br>
+    <h1> Vereinsziele 
+    </h1>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 column" id="aims-description">
+          <p>Durch einen interkulturellen Austausch von ganz neuer Qualität soll ein Beitrag zur positiven Veränderung der Gesellschaft geschaffen werden. PERCEPTIKA e.V. dient hierbei als „Interkultureller Dolmetscher“, welcher das nötige theoretische Wissen und dessen praktische Anwendung vermittelt. Dabei handelt es sich um altüberlieferte Wissensstrukturen, Lebensweisen und Werte, die die persönliche und spirituelle Weiterentwicklung des Menschen zum Ziel haben.</p>
+          <p>Mit unseren Aktionen fördern wir vor allem den interkulturell-spirituellen Bildungsaustausch und die Entwicklung des geistig­-spirituellen Bewusstseins. Der durch die verschiedenen Methoden zu erreichende Erkenntnisgewinn kann dann zu individueller Bewusstseins­- und Wahrnehmungserweiterung führen.</p>
+        </div>
+        <div class="col-xs-12 col-md-6 column">
+          <h3 id="aims-satzung">Satzungsmäßig festgehaltene Vereinsziele:</h3>
+          <ul id="aims-list">
+          <li>
+          Erforschung, Anwendung und Verbreitung der in verschiedenen indigenen Kulturen unterschiedlich ausgeprägten Heiltraditionen zur Förderung eines ganzheitlichen Verständnisses von Gesundheit und Spiritualität.
+          </li>
+          <li>
+          Sammlung und Weitervermittlung altüberlieferter Wissensstrukturen, Lebensweisen und Werte, die auf die persönliche und spirituelle Weiterentwicklung des Menschen abzielen
+          </li>
+          <li>
+          Förderung der Anwendung und Akzeptanz der global vielfältig ausgeprägten Heiltraditionen indigenen Ursprungs in Deutschland und Europa
+          </li>
+          <li>
+          Schaffung einer Plattform für einen breiten Austausch zwischen spirituell gesinnten Menschen, Wissenschaftlern, Heilpraktikern, Ärzten, Psychologen, Therapeuten, Künstlern und sonstigen spirituellen Praktikern 
+          </li>
+          <li>
+          Förderung spiritueller Verständiung über disziplinäre, nationale und kulturelle Grenzen hinweg
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end row -->
+  </div><!-- end container aims -->
+
+
+
+  <div class="container" id="reisen"> <!-- container Reisen -->
+      <h1> Studienreisen 
+          </h1>
+    <div class="rapa">
+      <div class="panel-group" id="accordion">
+       <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon glyphicon-plane"></span>
+              Lernen Sie die Anziehungskraft des immateriellen Kulturerbes Kubas kennen!
+            </a>
+          </h4>
+        </div>
+       <div id="collapseOne" class="panel-collapse collapse in">
+       <div class="panel-body">
+            <p>
+              Nach mehr als einem halben Jahrhundert des kalten Krieges bricht nach der Ende 2014 begonnenen historischen Annäherung zwischen Kuba und den USA nun höchstwahrscheinlich eine Epoche der schleichenden Übernahme Kubas durch den US-Kapitalismus an. In dieser Umbruchszeit führt Sie der Kuba-Spezialist Dr. Cornelius Griep mit seiner Erfahrung von über 30 jährlichen Studien- und Forschungsaufenthalten auf der Insel seit 1996 sowie mehreren Buchveröffentlichungen über Kuba in die soziopolitische, kulturelle, spirituell-religiöse und schamanische Dimension der kubanischen Alltagsrealität ein.
+              Er übernimmt die wissenschaftliche Leitung der Studienreise mit Führung durch Kubas Plätze voller Leben, heilende Kraftorte, Musik- Tanz und Dichtung, sowie die im kubanischen Volksglauben, besonders den afrikanischen Traditionen, verankerten spirituellen Ausdrucksformen.
+              Die einzelnen Ausflüge können einzeln gebucht werden. So werden die Teilnehmer ganz nebenbei in die kubanische Geschichte und Kultur eingeführt, indem wichtigsten historischen Orte, wie den Revolutionsplatz, die Havannaer Altstadt Habana Vieja (UNESCO-Kulturerbe), die Festung El Morro sowie einige Plätze, Tempel, Kathedralen und Kirchen besucht werden. Weitere Tagesausflüge auf den Spuren berühmter Persönlichkeiten (wie z.B. Alexander von Humboldt, Ernest Hemmingway und Compay Segundo) sind desweiteren buchbar. Ebenso kann in die Havannaer Tanzszene und die Dimension kubanischer Heilpflanzen eingetaucht werden, wobei auf den Einfluss der afrokubanischen Traditionen eingegangen wird. Die Heilpflanzen werden in den Heil- und Trommelzeremonien des afrokubanischen Volksglauben Santería wiederentdeckt, und es wird gezeigt wie sich dessen Ausdrucksformen auf fast allen Ebenen der kubanischen Realität (Kunst, Musik, Alltagsorganisation und Politik) manifestieren. Ein ausgewogenes Kulturprogramm, mit Besuchen der wichtigsten Kunstgalerien, des Nationalballets Kubas sowie Museen macht dies deutlich. Ebenso wird es Gelegenheit geben geweihten IFÁ-Priestern bei der Arbeit über die Schulter zu schauen (auf Wunsch können Konsultationen und Reinigungszeremonien durchgeführt werden), wobei der kulturgeschichtliche Hintergrund dieser Heilsysteme erklärt, und darüber hinaus aufzeigt wird, wie diese sich etabliert und in das kubanische Weltbild intergriert haben, ohne dass sie heutzutage Widersprüche zur Schulmedizin darstellen.
+              Weitere Führungen durch den botanischen Garten und ethnologische Tagesausflüge z.B. zu Kraftorten in Pinar del Río und Trinidad (Sierra del Escambray), den Aquáticos (Naturheilern aus einem kleinen Dorf in der Nähe von Viñales, die alle Krankheiten mit dem besonders energetisch-mineralhaltigen Wasser ihrer Bergquelle zu heilen vermögen) stehen ebenso im Programms. Darüberhinaus wird im Tal von Viñales (UNESCO-Naturerbe) auf einer Tabakplantage die Wirkung der bekanntesten Nachtschattengewächse und deren Weiterverarbeitung erklärt.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon glyphicon-plane"></span>
+              Therapiereise nach Marokko
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            Marokkanische GNAWA-Musik erfreut sich weltweit immer größerer Beliebtheit. Die trance-zendente Erfahrung dieser spirituellen Musik birgt eine jahrhundertelange Heiltradition afrikanischen Ursprungs, auf die heutzutage auch immer mehr Europäer für therapeutische Zwecke zurückgreifen, um Ruhe und Frieden zu finden. Angeboten wird eine Kombination von Studien- und Therapiereise zu den Ursprüngen der afrikanischen Heiltradition in Marokko. Während der Reise fungiere ich als wissenschaftliche Begleitung im Rahmen des Gnawa-Festivals in Essaouira, führe ein in die marrokanische Geschichte und Kultur, organisiere Vorträge und stelle den Kontakt zu den Gnawas für therapeutische Zwecke her. Alle Aufenthaltsfragen (für Unterkunft und Verpflegung vor Ort sind 300-500 € einzuplanen. Unterkünfte können unkompliziert vor Ort oder im Vorraus individuell, z.B. übers Internet gebucht werden) müssen selbst geklärt werden, wobei ich beim Beschaffen der Unterkunft vor Ort und dem Buchen der Flüge behilflich sein kann. Es enstehen keine Kosten für die Betreuung (und daher auch keine rechtlichen oder sonstigen Verpflichtungen meinerseits). Die Gnawa-Heilrituale sind auf Wunsch möglich.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon glyphicon-plane"></span>Tanzreise nach Kuba
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
+            Text folgt
+          </div>
+        </div>
+
+      </div> <!-- acordion id -->
+    </div> <!-- rapa -->
+
+</div> <!-- end container reisen -->
+
+  <div class="container" id="mitglied"> <!-- container Mitgliedschaft -->
+    <br>
+    <br>
+    <h1>Mitglied werden</h1>
+    <br>
+    <div id="member"> 
+      <h3>Mitgliedschaft</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <p>Haben Sie Interesse an einer Mitgliedschaft in unserem Verein? Dann nehmen Sie gerne per Email (info@perceptika.de) Kontakt mit uns auf.</p>
+
+          <p>Der Mitgliedsbeitrag wurde auf der Gründungsveranstaltung am 21.07.2014 auf 3 €/Monat festgesetzt, zahlbar viertel-, halb- oder ganzjährig. Für Studenten beträgt der Jahresbeitrag 20 €. Die genauen Zahlungsmodalitäten entnehmen Sie bitte dem <a href="pdf/Mitgliedschaftsantrag.pdf">Aufnahmeantrag.</a> </p>
+          <p><strong>Hinweis:</strong> Es sind ebenso 1-monatige kostenlose Probemitgliedschaften möglich.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <h3>
+            Unsere Kontoverbindung lautet:
+          </h3>
+          <ul id="konto">
+            <li>Empfänger: Perceptika e.V.
+            </li>
+            <li>Kreditinstitut: Deutsche Skatbank Altenburger Land
+            </li>
+            <li>IBAN: DE35 8306 5408 0004 8851 12
+            </li>
+            <li>BIC (SWIFT-Code): GENO DEF1 SLR  
+            </li>
+          </ul>
+        </div>
+<!--       <img class="responsive-img" src="img/camin-md.jpg"> -->
+      </div> <!-- end row -->
+    </div>
+    <br>
+    <br>
+  </div> <!-- end container Mitgliedschaft -->
+
+  <div class="container" id="contact"> <!-- container contact -->
+    <br>
+    <br>
+    <br>
+    <div class="row contactimage">
+      <div id="contact-list" class="col-md-8 col-md-offset-2 column">
+          <h1>Kontakt</h1>
+          <p><span class="glyphicon glyphicon-envelope" style="margin-right:2px"> </span> info@perceptika.de </p>
+          <p><span class="glyphicon glyphicon-phone" style="margin-right:2px"> </span> 015251344336</p>
+          <p><span class="glyphicon glyphicon glyphicon-home" style="margin-right:2px"> </span> 
+            <ul> 
+              <li>Perceptika e.V.</li>
+              <li>Verein für Integrative Entwicklung</li> 
+              <li>Sitz in Berlin</li>
+          </p>
+      </div><!-- /col -->
+    </div><!-- /row -->
+    <br>
+    <br>
+  </div> <!-- /container -->
+
+  <div class="container" id="download"> <!-- container contact -->
+    <div> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="img/downloadround-md.png">
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h4>Satzung des Vereins für Integrative Entwicklung „PERCEPTIKA e.V." (aktuelle Fassung vom Juli 2015) <a href="pdf/Satzung.pdf">herunterladen</a>
+          </h4>
+        </div>
+        <div class="col-md-10 col-md-offset-1">  
+          <h4>Mitgliedsantrag <a href="pdf/Mitgliedschaftsantrag.pdf">herunterladen</a>
+          </h4>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div>
+  </div>
+
+
+
+    <footer>
+      <div class="container"> 
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-xs-4 col-md-4" id="footing1">
+           <a href="#"> Imprint </a>
+          </div>
+          <div class="col-xs-4 col-md-4" id="facebook-button">
+            <a href="http://facebook.com/perceptika.de">Follow us on Facebook
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-4" id="footing2">
+            <p><span class="glyphicon glyphicon-copyright-mark" style="margin-right:2px"> </span>Perceptika e.V. 2016</p>
+          </div>
+        </div> 
+      </div>
+    </footer>
   <!-- ============================= -->
   <!-- All your JavaScript comes now -->
   <!-- ============================= -->

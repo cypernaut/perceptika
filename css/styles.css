@@ -1,11 +1,3 @@
-@media screen and (max-width: 768px) {
-	#carousel-example-generic {
-		margin-top: -30px;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-}
-
 @media only screen and (min-width : 1025px) {
     .desktop-img {
         display: block !important;
@@ -30,6 +22,12 @@
     }
 }
 
+@media only screen and (min-width : 769px) and (max-width : 1019px){
+	#verein {
+	padding-top: 50px !important;		
+	}
+}
+
 @media only screen and (max-width : 400px) {
     .desktop-img {
         display: none !important;
@@ -42,10 +40,71 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+	#collapseOne {
+		font-size: 1.25em !important;
+	}
+}
 @media only screen and (max-width: 992px) {
-	#facebook-button {
+	#collapseOne {
+		font-size: 1.12em !important;
+	}
+
+	#aims-satzung {
+	padding-top: 5px !important;
+	}
+	#aims-list {
+		margin: auto -25px !important;
+	}
+}
+@media screen and (max-width: 768px) {
+	#carousel-example-generic {
+		margin-top: -30px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	#logo {
+		top: 5px !important;
+	}
+
+	#collapseOne {
+		font-size: 0.93em !important;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	#collapseOne {
+		font-size: 0.83em !important;
+	}
+}
+
+@media screen and (max-width: 476px) {
+	#collapseOne {
+		font-size: 0.74em !important;
+	}
+}
+
+@media only screen and (max-width : 1094px) {
+	.perceptika {
 		display: none;
 	}
+}
+
+@media only screen and (max-width : 930px) {
+	#hometitle{
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 827px) {
+	#centretitle{
+		display: none;
+	}
+}
+
+body {
+  position: relative;
 }
 
 .jumbotron {
@@ -54,13 +113,15 @@
 
 #logo {
 	position: relative;
-	right: 30px;
+	top: -20px;
 	float: right;
 	max-width: 200px;
 	max-height: 200px;
 }
-
-
+#verein {
+	left: 20px !important;
+	margin-top: 40px !important;
+	}
 h1, 
 h2,
 h3 {
@@ -82,10 +143,6 @@ h3 {
 	padding-right: 70px;
 }
 
-#aims-description {
-	padding-left: 60px;
-}
-
 #aims-list {
 	margin-top: 32px;
 	margin-right: 10px;
@@ -97,26 +154,25 @@ h3 {
 
 .nav {
 	position: static;
-	padding-left: 20px;
 	top: 0;
-	float: right;
+	margin-right: 20px;
 	z-index: 1;
 }
 .carousel {
-	margin-top: -70px;
+	margin-top: -45px;
   	margin-left: -60px;
   	margin-right: -60px;
+  	margin-bottom: -48px;
 }
 .nav ul li {
 	display: inline-block;
 	padding: 20px 10px 20px;
-	float: right;
 }
 
 #bs-example-navbar-collapse-1 ul li a {
-	color: white;
+	color: orange;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.08em;
 }
 
 .nav a:hover {
@@ -124,10 +180,123 @@ h3 {
 	color: #ff0;
 	text-decoration: none;
 	transition: color 600ms;
-	-webkit-transition: color 600ms;
+		-webkit-transition: color 600ms;
 }
 
 #carousel-example-generic {
+}
+
+.downloadimage {
+	background-image: url(../img/downloadround-md.png);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	color: orange;
+ 	height: 800px;
+ 	margin-bottom: 1.5em;
+}
+
+.downloadimage a {
+	background-color: orange;
+}
+
+.downloadimage h4 {
+	margin-left: 60px;
+}
+
+#collapseOne {
+	background-image: url(../img/cuba-beach-sm.jpg);
+	background-position: center; 
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	width: 100%;
+ 	color: white;
+ 	font-size: 1.4em;
+ 	height: 800px;
+ 	margin-bottom: 1.5em;
+}
+
+#collapseTwo {
+	background-image: url(../img/morocco-md.jpg);
+	background-position: center; 
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	width: 100%;
+ 	color: blue;
+ 	font-size: 1.4em;
+ 	height: 800px;
+ 	margin-bottom: 1.5em;
+}
+
+#collapseThree {
+	background-image: url(../img/cuba-dance-md.jpg);
+	background-position: center; 
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	width: 100%;
+ 	color: blue;
+ 	font-size: 1.4em;
+ 	height: 800px;
+ 	margin-bottom: 1.5em;
+}
+#aims {
+ 	background-image: url(../img/arrow-md.jpg);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	width: 100%;
+ 	color: black;
+ 	height: 800px;
+ 	margin-bottom: 1.5em;
+}
+
+#aims-satzung {
+	padding-top: 375px;
+}
+
+.contactimage {
+ 	background-image: url(../img/contact-md.jpg);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	color: white;
+ 	height: 800px;
+ 	margin-bottom: 1.5em;
+ 	font-size: 1.2em;
+}
+
+#contact-list {
+	margin-left: 55px; 
+	margin-top: 42px;
+}
+#contact-list ul {
+		list-style-type: none; 
+		margin-top: -37px;
+		margin-left: -12px;
+}
+
+#member {
+	background-image: url(../img/camin-md.jpg);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	color: white;
+ 	height: 800px;
+ 	margin-bottom: 1.5em;
+ 	padding: 63px 10px 10px 40px;
+ 	font-size: 1.2em;
+}
+
+#member a {
+	color: yellow;
+}
+
+ul#konto {
+	padding-top: 20px;
+	list-style-type: none;
+}
+
+img {
+	width: 100%;
+}
+footer {
+	padding-top: 30px;
 }
 
 #footing1 {
@@ -139,27 +308,30 @@ h3 {
 	float: right;
 	color: #336699;
 }
-
+/*
 .panel-body {
 	color: blue;
+}*/
+
+.perceptika {
+	text-transform: uppercase;
+	margin-left: 20px;
 }
+
+.perceptika a {
+	color: white;
+	text-decoration: none;
+}
+
 .panel-heading > h4 {
 	background-color: #336699;
 }
 .panel-title {
-	color: white;
+	color: orange;
 }
 .rapa  {
 	width: 100%;
 	height: auto;
-}
-.contactimage {
- 	background-image: url("../img/landscape.jpg");
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	width: 100%;
- 	height: auto;
- 	margin-bottom: 1.5em;
 }
 
 .glyphicon {
