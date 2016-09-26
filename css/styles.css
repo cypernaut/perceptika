@@ -20,6 +20,9 @@
     .smartphone-img {
         display: none !important;
     }
+	#dance img src {
+		display: none !important;
+	}
 }
 
 @media only screen and (min-width : 769px) and (max-width : 1019px){
@@ -38,18 +41,26 @@
     .smartphone-img {
         display: block !important;
     }
+	#dance img src {
+		display: none !important;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
-	#collapseOne {
-		font-size: 1.25em !important;
+	#collapseOne, #collapseTwo, #collapseThree {
+		font-size: 1.35em !important;
+		padding: 0 10px!important;
 	}
+
 }
 @media only screen and (max-width: 992px) {
 	#collapseOne {
-		font-size: 1.12em !important;
+		font-size: 1.22em !important;
 	}
 
+	#dance img {
+		display: none !important;
+	}
 	#aims-satzung {
 	padding-top: 5px !important;
 	}
@@ -69,19 +80,19 @@
 	}
 
 	#collapseOne {
-		font-size: 0.93em !important;
+		font-size: 1.1em !important;
 	}
 }
 
 @media screen and (max-width: 568px) {
 	#collapseOne {
-		font-size: 0.83em !important;
+		font-size: 0.96em !important;
 	}
 }
 
 @media screen and (max-width: 476px) {
-	#collapseOne {
-		font-size: 0.74em !important;
+	#collapseOne, #collapseTwo {
+		font-size: 0.82em !important;
 	}
 }
 
@@ -107,8 +118,8 @@ body {
   position: relative;
 }
 
-.jumbotron {
-	background-color: ;
+.anchor {
+	padding-top: 50px;
 }
 
 #logo {
@@ -148,6 +159,10 @@ h3 {
 	margin-right: 10px;
 }
 
+.glyphicon {
+	margin-right:2px;
+}
+
 .navbar {
 	background-color: #336699;
 }
@@ -170,7 +185,7 @@ h3 {
 }
 
 #bs-example-navbar-collapse-1 ul li a {
-	color: orange;
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 }
@@ -180,7 +195,7 @@ h3 {
 	color: #ff0;
 	text-decoration: none;
 	transition: color 600ms;
-		-webkit-transition: color 600ms;
+	-webkit-transition: color 600ms;
 }
 
 #carousel-example-generic {
@@ -202,42 +217,77 @@ h3 {
 .downloadimage h4 {
 	margin-left: 60px;
 }
+/*
+.panel-body {
+	color: white;
+}
+*/
+.panel-heading a{
+	font-size: 125%;
+}
 
 #collapseOne {
-	background-image: url(../img/cuba-beach-sm.jpg);
-	background-position: center; 
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	width: 100%;
- 	color: white;
- 	font-size: 1.4em;
- 	height: 800px;
+	background-image: url(../img/havana-capitolio.jpg);
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+	color: white;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 50px;
+    height: 800px;
+ 	font-size: 1.25em;
  	margin-bottom: 1.5em;
 }
 
+#studyTwo {
+	 	padding-top: 10px;
+}
+
 #collapseTwo {
-	background-image: url(../img/morocco-md.jpg);
+	background-image: url(../img/cuba-bridge-md.jpg);
 	background-position: center; 
  	background-size: cover;
- 	background-repeat: no-repeat;
+    background-attachment: fixed;
  	width: 100%;
- 	color: blue;
+ 	color: white;
+ 	padding: 100px;
+ 	padding-top: 50px;
+ 	padding-left: 20px;
  	font-size: 1.4em;
  	height: 800px;
  	margin-bottom: 1.5em;
 }
 
 #collapseThree {
-	background-image: url(../img/cuba-dance-md.jpg);
-	background-position: center; 
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	width: 100%;
- 	color: blue;
- 	font-size: 1.4em;
- 	height: 800px;
- 	margin-bottom: 1.5em;
+ 	background-image: url(../img/cuba-vinales.jpg);
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 50px;
+    height: 800px;
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
 }
+
+#collapseFour {
+ 	background-image: url(../img/monte.jpg);
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 50px;
+    height: 800px;
+    font-size: 1.4em;
+    padding-bottom: 1.5em;
+}
+
 #aims {
  	background-image: url(../img/arrow-md.jpg);
  	background-size: cover;
@@ -252,14 +302,17 @@ h3 {
 	padding-top: 375px;
 }
 
-.contactimage {
+#contactimage {
  	background-image: url(../img/contact-md.jpg);
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	color: white;
- 	height: 800px;
- 	margin-bottom: 1.5em;
- 	font-size: 1.2em;
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+    color: white;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 50px;
+    height: 800px;
 }
 
 #contact-list {
@@ -274,10 +327,15 @@ h3 {
 
 #member {
 	background-image: url(../img/camin-md.jpg);
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	color: white;
- 	height: 800px;
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+    color: white;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding:100px;
+    padding-top: 50px;
+    height: 800px;
  	margin-bottom: 1.5em;
  	padding: 63px 10px 10px 40px;
  	font-size: 1.2em;
@@ -308,10 +366,6 @@ footer {
 	float: right;
 	color: #336699;
 }
-/*
-.panel-body {
-	color: blue;
-}*/
 
 .perceptika {
 	text-transform: uppercase;
@@ -323,11 +377,12 @@ footer {
 	text-decoration: none;
 }
 
-.panel-heading > h4 {
-	background-color: #336699;
+.panel-heading > h2 {
+	background-color: white;
 }
+
 .panel-title {
-	color: orange;
+	color: #336699;
 }
 .rapa  {
 	width: 100%;
