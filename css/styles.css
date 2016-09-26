@@ -397,3 +397,7 @@ footer {
 	color: #ff0;
 	transition: color 900ms;
 }
+
+.btn-facebook {
+	width: 74%;
+}
