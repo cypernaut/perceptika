@@ -147,6 +147,10 @@ h3 {
 	font-family: Georgia, Cambria, Palatino, Times, serif;
 }
 
+.glyphicon {
+	margin-right: 2px;
+}
+
 .column p {
 	padding-top: 10px;
 	font-family: Georgia, Cambria, Palatino, Times, serif;
