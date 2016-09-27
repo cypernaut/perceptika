@@ -129,14 +129,16 @@ body {
 	max-width: 200px;
 	max-height: 200px;
 }
+
 #verein {
 	left: 20px !important;
 	margin-top: 40px !important;
-	}
+}
+
 h1, 
 h2,
 h3 {
-	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-family: Cabin, Futura, Helvetica, Arial, sans-serif;
 }
 
 .column {
@@ -201,27 +203,37 @@ h3 {
 #carousel-example-generic {
 }
 
-.downloadimage {
-	background-image: url(../img/downloadround-md.png);
+#downloadimage {
+	background-image: url(../img/waterfall.jpg);
  	background-size: cover;
  	background-repeat: no-repeat;
- 	color: orange;
- 	height: 800px;
+ 	color: white;
+ 	height: 1700px;
+ 	padding-top: 300px;
  	margin-bottom: 1.5em;
 }
 
-.downloadimage a {
-	background-color: orange;
+#downloadimage a {
+	background-color: white;
+	color: #336699;
 }
 
-.downloadimage h4 {
-	margin-left: 60px;
+#downloadimage a:hover {
+	text-decoration: none;
+	color: orange;
 }
-/*
-.panel-body {
-	color: white;
+
+#downlist {
+	font-size: 1.3em;
+	list-style-type: none;
 }
-*/
+
+#downlist li {
+	font-size: 1.4em;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+}
+
 .panel-heading a{
 	font-size: 125%;
 }
@@ -337,7 +349,7 @@ h3 {
     padding-top: 50px;
     height: 800px;
  	margin-bottom: 1.5em;
- 	padding: 63px 10px 10px 40px;
+ 	padding: 63px 10px 70px 40px;
  	font-size: 1.2em;
 }
 
@@ -383,10 +395,6 @@ footer {
 
 .panel-title {
 	color: #336699;
-}
-.rapa  {
-	width: 100%;
-	height: auto;
 }
 
 .glyphicon {
