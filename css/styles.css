@@ -173,21 +173,23 @@ h3 {
 }
 
 .navbar {
-	background-color: #336699;
+	background-color: #336699!important;
 }
 
 .nav {
 	position: static;
 	top: 0;
-	margin-right: 20px;
+	margin-right: 20px!important;
 	z-index: 1;
 }
+
 .carousel {
 	margin-top: -45px;
   	margin-left: -60px;
   	margin-right: -60px;
   	margin-bottom: -48px;
 }
+
 .nav ul li {
 	display: inline-block;
 	padding: 20px 10px 20px;
@@ -386,7 +388,8 @@ footer {
 #footing2 > p{
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 1.5em;
+	margin-left: 20px;
+	font-size: 1.1em;
 	float: right;
 	color: #336699;
 }
@@ -418,9 +421,14 @@ footer {
 	transition: color 900ms;
 }
 
-.btn-facebook {
+.fb-like {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 74%;
 	float: left;
+}
+
+.twitter-follow-button {
+	margin-top: 10px;
+	padding-right: 
 }
