@@ -385,10 +385,10 @@ footer {
 	float: left;
 }
 
-#footing2 > p{
+#footing2 > p {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	float: right;
 	color: #336699;
 }
