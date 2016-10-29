@@ -372,6 +372,10 @@ ul#konto {
 	list-style-type: none;
 }
 
+#calendar {
+	margin: 60px;
+}
+
 img {
 	width: 100%;
 }
@@ -388,8 +392,7 @@ footer {
 #footing2 > p {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 0.9em;
-	float: right;
+	font-size: 1.2em;
 	color: #336699;
 }
 
@@ -430,4 +433,18 @@ footer {
 .twitter-follow-button {
 	margin-top: 10px;
 	padding-right: 
+}
+
+.block {
+	background-color: orange!important;
+	padding-top: 5px!important;
+	padding-bottom: 5px!important;	
+	padding-left: 5px!important;
+	font-size: 1.2em!important;
+}
+
+.modul {
+	background-color: brown!important;
+	padding-top: 2px!important;
+	font-size: 1.1em!important;
 }
