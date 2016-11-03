@@ -372,8 +372,13 @@ ul#konto {
 	list-style-type: none;
 }
 
-#calendar {
+#fullCalModal {
 	margin: 60px;
+}
+
+#eventUrl {
+	color: white;
+	text-decoration: none;
 }
 
 img {
@@ -402,8 +407,8 @@ footer {
 }
 
 .perceptika a {
-	color: white;
-	text-decoration: none;
+	color: white!important;
+	text-decoration: none!important;
 }
 
 .panel-heading > h2 {
@@ -436,10 +441,10 @@ footer {
 }
 
 .block {
-	background-color: orange!important;
-	padding-top: 5px!important;
-	padding-bottom: 5px!important;	
-	padding-left: 5px!important;
+	background-color: #FF6633!important;
+	padding-top: 23px!important;
+	padding-bottom: 23px!important;	
+	padding-left: 23px!important;
 	font-size: 1.2em!important;
 }
 
@@ -448,3 +453,4 @@ footer {
 	padding-top: 2px!important;
 	font-size: 1.1em!important;
 }
+

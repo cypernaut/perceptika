@@ -275,7 +275,23 @@
   <div class="container anchor" id="reisen"> <!-- container Reisen -->
       <h1> Studienreisen nach Kuba
       </h1>
-      <div id='calendar'></div>
+      <div id="bootstrapModalFullCalendar">
+        <div id="fullCalModal" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
+                      <h4 id="modalTitle" class="modal-title"></h4>
+                  </div>
+                  <div id="modalBody" class="modal-body"></div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button class="btn btn-primary"><a id="eventUrl" target="_blank">Book event</a></button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
       <div class="panel-group" id="accordion">
        <div class="panel panel-default">
         <div class="panel-heading">
@@ -392,7 +408,7 @@
   </div> <!-- end container Mitgliedschaft -->
 
   <div class="container anchor" id="contact"> <!-- container contact -->
-    <div id="contactimage">
+    <div id="contactimage" data-stellar-background-ratio="0.5">
     <div class="row" >
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 column" id="contact-list">
           <h1>Kontakt</h1>
@@ -475,126 +491,152 @@
   <script src="js/wow.min.js" type="text/javascript"></script>
   <script src="js/moment.js" type="text/javascript"></script>
   <script src="js/fullcalendar.js" type="text/javascript"></script>
-  <script type="text/javascript">
-  var $root = $('html, body');
-    $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
-        });
-        return false;
-    });
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal.min.css"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script> 
+    $('#contactimage').stellar();
   </script>
+      <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
+        });
+      </script>
   <script type="text/javascript">
-$(document).ready(function() {
+  $(document).ready(function() {
   // page is ready
   var d = new Date(Date.now()+3.5 * 30 * 24 * 60 * 60 * 1000);
-  $('#calendar').fullCalendar({
-    date: d,
-    // enable theme
-    theme: true,
-    // emphasizes business hours
-    businessHours: true,
-    // event dragging & resizing
-    editable: true,
-    // start showing time in day view
-    scrollTime: '09:00:00',
-   
-    now: d.toISOString(),
-    // header
-    header: {
-      left: 'prev,next',
-      center: 'title',
-      right: 'month,agendaWeek,agendaDay'
-    },
-     eventSources: [
+      $('#bootstrapModalFullCalendar').fullCalendar({
+        date: d,
+        // events: 'events.json',
+        scrollTime: '09:00:00',
+        now: d.toISOString(),
+        // header
+        header: {
+          left: 'prev,next',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay'
+        },
+        eventClick:  function(event, jsEvent, view) {
+            $('#modalTitle').html(event.title);
+            $('#modalBody').html(event.description);
+            $('#eventUrl').attr('href',event.url);
+            $('#fullCalModal').modal();
+        },
+             events: [
+              {
+                      title  :"Heilung und Spiritualität",
+                      allday :"false",
+                      description :"<p>Angeboten wird eine Kombination von Studien- und Therapiereise zu den Ursprüngen der afrikanischen Heiltradition in Kuba. Während der Reise fungiert Dr. Cornelius Griep als wissenschaftliche Begleitung, führt ein in die kubanische Geschichte und Kultur und stellt den Kontakt zu Santería-Priestern und geweihten Trommlern für therapeutische Zwecke her.</p><p>Individuelle Trommel- und Heilrituale sind auf Wunsch möglich. Ebenso wird es Gelegenheit geben geweihten IFÁ-Priestern bei der Arbeit über die Schulter zu schauen (auf Wunsch können Konsultationen und Reinigungszeremonien durchgeführt werden), wobei der kulturgeschichtliche Hintergrund dieser Heilsysteme erklärt, und darüber hinaus aufzeigt wird, wie diese sich etabliert und in das kubanische Weltbild intergriert haben, ohne dass sie heutzutage Widersprüche zur Schulmedizin darstellen.</p>",
+                      start  : '2017-02-12',
+                      end    : '2017-02-20',
+                      className : "block"
+              },
+              {
+                  title  : "Block 3: Kubas historisches, kulturelles und politisches Erbe",
+                  description :"<p>Nach mehr als einem halben Jahrhundert des kalten Krieges bricht nach der Ende 2014 begonnenen historischen Annäherung zwischen Kuba und den USA nun höchstwahrscheinlich eine Epoche der schleichenden Übernahme Kubas durch den US-Kapitalismus an. In dieser Umbruchszeit führt Sie der Kuba-Spezialist Dr. Cornelius Griep mit seiner Erfahrung von über 30 jährlichen Studien- und Forschungsaufenthalten auf der Insel seit 1996 sowie mehreren Buchveröffentlichungen über Kuba in die soziopolitische, kulturelle, spirituell-religiöse und schamanische Dimension der kubanischen Alltagsrealität ein.</p><p>Er übernimmt die wissenschaftliche Leitung der Studienreise mit Führung durch Kubas Plätze voller Leben, heilende Kraftorte, Musik- Tanz und Dichtung, sowie die im kubanischen Volksglauben, besonders den afrikanischen Traditionen, verankerten spirituellen Ausdrucksformen. Die einzelnen Ausflüge können einzeln gebucht werden. So werden die Teilnehmer ganz nebenbei in die kubanische Geschichte und Kultur eingeführt, indem wichtigsten historischen Orte, wie den Revolutionsplatz, die Havannaer Altstadt Habana Vieja (UNESCO-Kulturerbe), die Festung El Morro sowie einige Plätze, Tempel, Kathedralen und Kirchen besucht werden. Weitere Tagesausflüge auf den Spuren berühmter Persönlichkeiten (wie z.B. Alexander von Humboldt, Ernest Hemmingway und Compay Segundo) sind desweiteren buchbar. Ebenso kann in die Havannaer Tanzszene und die Dimension kubanischer Heilpflanzen eingetaucht werden, wobei auf den Einfluss der afrokubanischen Traditionen eingegangen wird. Die Heilpflanzen werden in den Heil- und Trommelzeremonien des afrokubanischen Volksglauben Santería wiederentdeckt, und es wird gezeigt wie sich dessen Ausdrucksformen auf fast allen Ebenen der kubanischen Realität (Kunst, Musik, Alltagsorganisation und Politik) manifestieren. Ein ausgewogenes Kulturprogramm, mit Besuchen der wichtigsten Kunstgalerien, des Nationalballets Kubas, des botanischen Gartens sowie von Museen macht dies deutlich.</p>",
+                  start  : '2017-03-01', 
+                  end    : '2017-03-10',
+                  url    : '#collapseOne',
+                  className : "block"
+              },
+              {
+                  title  : 'Block 2: Kunst, Musik und Tanz',
+                  start  : '2017-02-21',
+                  end    : '2017-02-28',
+                  description: "<p>Die kubanischen Rhythmen erfreut sich weltweit sehr großer Beliebtheit. Die trance-zendente Erfahrung der afrokubanischen Percussion-Instrumente birgt eine jahrhundertelange Heiltradition afrikanischen Ursprungs, auf die heutzutage auch immer mehr Europäer für therapeutische Zwecke zurückgreifen, um Ruhe und Frieden zu finden.</p>",
+                  // url    : '#collapseTwo',
+                  className : "block"
+              },
+              {
+                  title  : 'Block 4: Abenteuerreise nach Kuba',
+                  start  : '2017-03-11',
+                  end    : '2017-03-18',
+                  description: "<p>.</p>",
+                  // url    : '#collapseThree',
+                  className : "block"
+              },
+              {
+                  title  : 'Modul 2A: Trommelzeremonie',
+                  start  : '2017-02-26',
+                  end    : '2017-02-28',
+                  className : "modul",
+                  description: "<p>Innerhalb der afrokubanischen Traditionen, erfreuen sich Trommelzeremonien immer größerer Beliebtheit. Besuche des Callejón de Hamel, auf Wunsch auch spirituell-religiöser Trommelzeremonien stehen auf dem Programm.</p>"
+              },
+              {
+                  title  : 'Event 2A-I',
+                  start  : '2017-02-26T11:00:00',
+                  end    : '2017-02-26T15:00:00',
+                  allDay : false, // will make the time show
+                  description: "<p>Besuche des Callejón de Hamel, auf Wunsch auch spirituell-religiöser Trommelzeremonien stehen auf dem Programm.</p>"
+              },
+              {
+                  title  : 'Event 2A-II',
+                  start  : '2017-02-26T09:50:00',
+                  allDay : false // will make the time show
+              },              
+              {
+                  title  : 'Modul 2B: Salsa',
+                  start  : '2017-03-01',
+                  end    : '2017-03-02',
+                  className : "modul"
+              },
+              {
+                  title  : 'Event 2A-III',
+                  start  : '2017-02-26T09:50:00',
+                  allDay : false // will make the time show
+              },
+              {
+                  title  : 'Event 2A-IV',
+                  start  : '2017-02-27T09:00:00',
+                  allDay : false // will make the time show
+              }
+            ],
+                  color: '#336699',     // an option!
+                  textColor: 'white' // an option!
+    });
+});
 
-        // your event source
-        {
-      events: [
-        {
-            title  : 'Block 3: Kubas historisches, kulturelles und politisches Erbe',
-            start  : '2017-03-01', 
-            end    : '2017-03-10',
-            url    : '#collapseOne',
-            className : "block"
-        },
-        {
-            title  : 'Block 1: Heilung und Spiritualität',
-            start  : '2017-02-12',
-            end    : '2017-02-20',
-            url    : '#collapseTwo',
-            className : "block"
-        },
-        {
-            title  : 'Block 2: Kunst, Musik und Tanz',
-            start  : '2017-02-21',
-            end    : '2017-02-28',
-            url    : '#collapseTwo',
-            className : "block"
-        },
-        {
-            title  : 'Block 4: Abenteuerreise nach Kuba',
-            start  : '2017-03-11',
-            end    : '2017-03-18',
-            url    : '#collapseThree',
-            className : "block"
-        },
-        {
-            title  : 'Modul 2A: Trommelzeremonie',
-            start  : '2017-02-26',
-            end    : '2017-02-27',
-            className : "modul"
-        },
-        {
-            title  : 'Event 2A-I',
-            start  : '2017-02-26T09:50:00',
-            allDay : false // will make the time show
-        }
-      ],
-            color: '#336699',     // an option!
-            textColor: 'white' // an option!
-        }
+  //     rebuildClickEvents();
+  //     document.querySelector('.fc-month-button').addEventListener('click', rebuildClickEvents)
+  //     document.querySelector('.fc-next-button').addEventListener('click', rebuildClickEvents)
+  //     document.querySelector('.fc-prev-button').addEventListener('click', rebuildClickEvents)
+  //     document.querySelector('.fc-agendaDay-button').addEventListener('click', rebuildClickEvents)
+  //     document.querySelector('.fc-agendaWeek-button').addEventListener('click', rebuildClickEvents)
+  //     function rebuildClickEvents() {
+  //   var list = document.querySelectorAll('.fc-event');
+  //   console.log(list);
+  //   for (var i = 0; i < list.length; i++) {
+  //     list[i].onclick = function() {
+  //       var content = this.children[0].innerHTML
+  //       if (content.indexOf('fc-time') >= 0) {
+  //         var time = this.children[0].children[0].innerHTML
+  //         var title = this.children[0].children[1].innerHTML
+  //           location.href ='#collapseTwo' // for every event that has time do this on click
+  //         // alert(time + ': ' + title)
+  //       } else {
+  //         var title = this.children[0].children[0].innerHTML
 
-        // any other event sources...
-    ]
-    })
-      rebuildClickEvents();
-      document.querySelector('.fc-month-button').addEventListener('click', rebuildClickEvents)
-      document.querySelector('.fc-next-button').addEventListener('click', rebuildClickEvents)
-      document.querySelector('.fc-prev-button').addEventListener('click', rebuildClickEvents)
-      document.querySelector('.fc-agendaDay-button').addEventListener('click', rebuildClickEvents)
-      document.querySelector('.fc-agendaWeek-button').addEventListener('click', rebuildClickEvents)
-      function rebuildClickEvents() {
-    var list = document.querySelectorAll('.fc-event');
-    console.log(list);
-    for (var i = 0; i < list.length; i++) {
-      list[i].onclick = function() {
-        var content = this.children[0].innerHTML
-        if (content.indexOf('fc-time') >= 0) {
-          var time = this.children[0].children[0].innerHTML
-          var title = this.children[0].children[1].innerHTML
-            location.href ='#collapseTwo' // for every event that has time do this on click
-          // alert(time + ': ' + title)
-        } else {
-          var title = this.children[0].children[0].innerHTML
-
-          // if (title === 'Kubas historisches, kulturelles und politisches Erbe') {
-          //   location.href ='#collapseOne'
-          // }
-          if (title === 'Modul Eins') {
-            location.href ='#collapseTwo'
-          }
-          if (title === 'Modul 2A: Trommelzeremonie') {
-            location.href ='#collapseThree'
-          }
-        }
-       }
-      }
-    }
-  });
+  //         // if (title === 'Kubas historisches, kulturelles und politisches Erbe') {
+  //         //   location.href ='#collapseOne'
+  //         // }
+  //          // if (title === 'Modul 2B: Salsa') {
+  //           // window.open("http://www.perceptika.de")          
+  //          // }
+  //         if (title === 'Modul 2A: Trommelzeremonie') {
+  //           $("#drums").show();   
+  //         }
+  //       }
+  //      }
+  //     }
+  //   }
+  // });
   </script>
     </body>
 </html>
