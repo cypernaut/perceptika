@@ -287,11 +287,11 @@
                   <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                       <button class="btn btn-primary"><a id="eventUrl" target="_blank">Book event</a></button>
+                      <button class="btn btn-success"><a id="drums" target="_blank">Book event</a></button>
                   </div>
               </div>
           </div>
         </div>
-      </div>
       <div class="panel-group" id="accordion">
        <div class="panel panel-default">
         <div class="panel-heading">
@@ -563,6 +563,12 @@
                   className : "block"
               },
               {
+                  title  : 'afrikanische Traditionen',
+                  start  : '2017-02-23',
+                  end    : '2017-02-25',
+                  className : "modul"
+              },
+              {
                   title  : 'Modul 2A: Trommelzeremonie',
                   start  : '2017-02-26',
                   end    : '2017-02-28',
@@ -570,19 +576,26 @@
                   description: "<p>Innerhalb der afrokubanischen Traditionen, erfreuen sich Trommelzeremonien immer größerer Beliebtheit. Besuche des Callejón de Hamel, auf Wunsch auch spirituell-religiöser Trommelzeremonien stehen auf dem Programm.</p>"
               },
               {
-                  title  : 'Event 2A-I',
-                  start  : '2017-02-26T11:00:00',
+                  title  : 'Callejón de Hamel',
+                  start  : '2017-02-26T10:30:00',
                   end    : '2017-02-26T15:00:00',
                   allDay : false, // will make the time show
                   description: "<p>Besuche des Callejón de Hamel, auf Wunsch auch spirituell-religiöser Trommelzeremonien stehen auf dem Programm.</p>"
               },
               {
-                  title  : 'Event 2A-II',
+                  title  : 'Toque de Santo',
                   start  : '2017-02-26T09:50:00',
-                  allDay : false // will make the time show
-              },              
+                  allDay : false,
+                  description: "<p>Beiwohnen einer der religiösen Zeremonie, eines Toque de Santo</p>",
+              },     
               {
-                  title  : 'Modul 2B: Salsa',
+                  title  : 'Casa de Africa',
+                  start  : '2017-02-24T19:30:00',
+                  allDay : false,
+                  description: "Besuch der casa de África in Habana Vieja"
+              },         
+              {
+                  title  : 'afrikanische Traditionen',
                   start  : '2017-03-01',
                   end    : '2017-03-02',
                   className : "modul"
@@ -590,7 +603,7 @@
               {
                   title  : 'Event 2A-III',
                   start  : '2017-02-26T09:50:00',
-                  allDay : false // will make the time show
+                  allDay : false 
               },
               {
                   title  : 'Event 2A-IV',
@@ -601,42 +614,42 @@
                   color: '#336699',     // an option!
                   textColor: 'white' // an option!
     });
-});
 
-  //     rebuildClickEvents();
-  //     document.querySelector('.fc-month-button').addEventListener('click', rebuildClickEvents)
-  //     document.querySelector('.fc-next-button').addEventListener('click', rebuildClickEvents)
-  //     document.querySelector('.fc-prev-button').addEventListener('click', rebuildClickEvents)
-  //     document.querySelector('.fc-agendaDay-button').addEventListener('click', rebuildClickEvents)
-  //     document.querySelector('.fc-agendaWeek-button').addEventListener('click', rebuildClickEvents)
-  //     function rebuildClickEvents() {
-  //   var list = document.querySelectorAll('.fc-event');
-  //   console.log(list);
-  //   for (var i = 0; i < list.length; i++) {
-  //     list[i].onclick = function() {
-  //       var content = this.children[0].innerHTML
-  //       if (content.indexOf('fc-time') >= 0) {
-  //         var time = this.children[0].children[0].innerHTML
-  //         var title = this.children[0].children[1].innerHTML
-  //           location.href ='#collapseTwo' // for every event that has time do this on click
-  //         // alert(time + ': ' + title)
-  //       } else {
-  //         var title = this.children[0].children[0].innerHTML
+      rebuildClickEvents();
+      document.querySelector('.fc-month-button').addEventListener('click', rebuildClickEvents)
+      document.querySelector('.fc-next-button').addEventListener('click', rebuildClickEvents)
+      document.querySelector('.fc-prev-button').addEventListener('click', rebuildClickEvents)
+      document.querySelector('.fc-agendaDay-button').addEventListener('click', rebuildClickEvents)
+      document.querySelector('.fc-agendaWeek-button').addEventListener('click', rebuildClickEvents)
+      function rebuildClickEvents() {
+    var list = document.querySelectorAll('.fc-event');
+    console.log(list);
+    for (var i = 0; i < list.length; i++) {
+      list[i].onclick = function() {
+        var content = this.children[0].innerHTML
+        if (content.indexOf('fc-time') >= 0) {
+          var time = this.children[0].children[0].innerHTML
+          var title = this.children[0].children[1].innerHTML
+            location.href ='#collapseTwo' // for every event that has time do this on click
+          // alert(time + ': ' + title)
+        } else {
+          var title = this.children[0].children[0].innerHTML
 
-  //         // if (title === 'Kubas historisches, kulturelles und politisches Erbe') {
-  //         //   location.href ='#collapseOne'
-  //         // }
-  //          // if (title === 'Modul 2B: Salsa') {
-  //           // window.open("http://www.perceptika.de")          
-  //          // }
-  //         if (title === 'Modul 2A: Trommelzeremonie') {
-  //           $("#drums").show();   
-  //         }
-  //       }
-  //      }
-  //     }
-  //   }
-  // });
+          // if (title === 'Kubas historisches, kulturelles und politisches Erbe') {
+          //   location.href ='#collapseOne'
+          // }
+           // if (title === 'Modul 2B: Salsa') {
+            // window.open("http://www.perceptika.de")          
+           // }
+          if (title === 'Toque de santo') {
+            $("eventUrl").hide();
+            $("#drums").show();   
+          }
+        }
+       }
+      }
+    }
+  });
   </script>
     </body>
 </html>

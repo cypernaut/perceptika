@@ -381,6 +381,10 @@ ul#konto {
 	text-decoration: none;
 }
 
+#drums {
+	display: none;
+}
+
 img {
 	width: 100%;
 }
