@@ -381,8 +381,13 @@ ul#konto {
 	text-decoration: none;
 }
 
+#rincon {
+	color: red;
+}
+
 #drums {
 	display: none;
+	text-decoration: none;
 }
 
 img {

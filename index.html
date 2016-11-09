@@ -283,11 +283,11 @@
                       <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
                       <h4 id="modalTitle" class="modal-title"></h4>
                   </div>
-                  <div id="modalBody" class="modal-body"></div>
+                  <div id="modalBody" class="modal-body"></div>  
                   <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button id="rincon" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-md">Video</button>
                       <button class="btn btn-primary"><a id="eventUrl" target="_blank">Book event</a></button>
-                      <button class="btn btn-success"><a id="drums" target="_blank">Book event</a></button>
                   </div>
               </div>
           </div>
@@ -300,17 +300,26 @@
               Lernen Sie die Anziehungskraft des immateriellen Kulturerbes Kubas kennen!
             </a>
           </h4>
+
+          <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>  
+                            <h2 lang="en">Rincon</h2>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="420" height="237" src="//www.youtube.com/embed/C8aUu-0wX6I" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         </div>
         <div id="collapseOne" class="panel-collapse collapse in">
           <div class="panel-body">
-                <p>
-                  Nach mehr als einem halben Jahrhundert des kalten Krieges bricht nach der Ende 2014 begonnenen historischen Annäherung zwischen Kuba und den USA nun höchstwahrscheinlich eine Epoche der schleichenden Übernahme Kubas durch den US-Kapitalismus an. In dieser Umbruchszeit führt Sie der Kuba-Spezialist Dr. Cornelius Griep mit seiner Erfahrung von über 30 jährlichen Studien- und Forschungsaufenthalten auf der Insel seit 1996 sowie mehreren Buchveröffentlichungen über Kuba in die soziopolitische, kulturelle, spirituell-religiöse und schamanische Dimension der kubanischen Alltagsrealität ein.
-                </p>
-                <p>
-                  Er übernimmt die wissenschaftliche Leitung der Studienreise mit Führung durch Kubas Plätze voller Leben, heilende Kraftorte, Musik- Tanz und Dichtung, sowie die im kubanischen Volksglauben, besonders den afrikanischen Traditionen, verankerten spirituellen Ausdrucksformen.
-                  Die einzelnen Ausflüge können einzeln gebucht werden. So werden die Teilnehmer ganz nebenbei in die kubanische Geschichte und Kultur eingeführt, indem wichtigsten historischen Orte, wie den Revolutionsplatz, die Havannaer Altstadt Habana Vieja (UNESCO-Kulturerbe), die Festung El Morro sowie einige Plätze, Tempel, Kathedralen und Kirchen besucht werden. Weitere Tagesausflüge auf den Spuren berühmter Persönlichkeiten (wie z.B. Alexander von Humboldt, Ernest Hemmingway und Compay Segundo) sind desweiteren buchbar. Ebenso kann in die Havannaer Tanzszene und die Dimension kubanischer Heilpflanzen eingetaucht werden, wobei auf den Einfluss der afrokubanischen Traditionen eingegangen wird. Die Heilpflanzen werden in den Heil- und Trommelzeremonien des afrokubanischen Volksglauben Santería wiederentdeckt, und es wird gezeigt wie sich dessen Ausdrucksformen auf fast allen Ebenen der kubanischen Realität (Kunst, Musik, Alltagsorganisation und Politik) manifestieren. Ein ausgewogenes Kulturprogramm, mit Besuchen der wichtigsten Kunstgalerien, des Nationalballets Kubas, des botanischen Gartens sowie von Museen macht dies deutlich. 
-                  </p>
+                
           </div>
         </div>
         <div class="panel panel-default">
@@ -326,10 +335,7 @@
           <div class="panel-body">
           <div class="row">
           <div class="col-md-8" id="studyTwo">
-            Die kubanischen Rhythmen erfreut sich weltweit sehr großer Beliebtheit. Die trance-zendente Erfahrung der afrokubanischen Percussion-Instrumente birgt eine jahrhundertelange Heiltradition afrikanischen Ursprungs, auf die heutzutage auch immer mehr Europäer für therapeutische Zwecke zurückgreifen, um Ruhe und Frieden zu finden. Angeboten wird eine Kombination von Studien- und Therapiereise zu den Ursprüngen der afrikanischen Heiltradition in Kuba. Während der Reise fungiert Dr. Cornelius Griep als wissenschaftliche Begleitung, führt ein in die kubanische Geschichte und Kultur und stellt den Kontakt zu Santería-Priestern und geweihten Trommlern für therapeutische Zwecke her. Individuelle Trommel- und Heilrituale sind auf Wunsch möglich. Ebenso wird es Gelegenheit geben geweihten IFÁ-Priestern bei der Arbeit über die Schulter zu schauen (auf Wunsch können Konsultationen und Reinigungszeremonien durchgeführt werden), wobei der kulturgeschichtliche Hintergrund dieser Heilsysteme erklärt, und darüber hinaus aufzeigt wird, wie diese sich etabliert und in das kubanische Weltbild intergriert haben, ohne dass sie heutzutage Widersprüche zur Schulmedizin darstellen.
-          <div class="embed-responsive-item">
-            <iframe width="420" height="237" src="//www.youtube.com/embed/C8aUu-0wX6I" frameborder="0" allowfullscreen></iframe>
-          </div>  
+            
           </div>
           <div class="col-md-4" id="dance">
              <img src="img/cuba-dance-md.jpg">
@@ -558,7 +564,7 @@
                   title  : 'Block 4: Abenteuerreise nach Kuba',
                   start  : '2017-03-11',
                   end    : '2017-03-18',
-                  description: "<p>.</p>",
+                  description: "<p>Rollende Hügel von braun-grünem Gras, eine Brise, die den Geruch eines anderes Jahrhunderts trägt und Tropenwälder, wo sich zur Dämmerung der Gesang des tiefblauen Tocororo (Nationalvogel Kubas) und karibische Rhythmen aus einem fernen, blechern schallenden Radio ablösen. Neben dem pulsierenden Leben der farbenfrohen Städte gibt es geheimnisvolle Orte, die als Inspiration und Grundlage des farbenfrohen Lebens andernorts dienen. Ihre Geheimnisse werden nur von einigen wenigen gehütet und der normale Inseltourismus bleibt ihnen fern. Doch genau hier lohnt es sich genauer hin zu sehen, mit Geheimnishütern durch Palmenwälder und um Wasserfälle zu streifen, sich vom süßen Duft der Tropenblumen betören zu lassen und die süßen Früchte zu genießen, die etliche Pflanzen scheinbar nur für dich bereit halten.</p>",
                   // url    : '#collapseThree',
                   className : "block"
               },
@@ -641,9 +647,9 @@
            // if (title === 'Modul 2B: Salsa') {
             // window.open("http://www.perceptika.de")          
            // }
-          if (title === 'Toque de santo') {
-            $("eventUrl").hide();
-            $("#drums").show();   
+          if (title === 'Toque de Santo') {
+            location.href ='#collapseTwo',
+            $("#rincon").hide();   
           }
         }
        }
