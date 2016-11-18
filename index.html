@@ -54,13 +54,13 @@
         <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li id="hometitle"><a href="#contact">Kontakt</a></li>
-            <li><a href="#mitglied">Mitglied werden</a></li>
-            <li><a href="#download">Downloads</a></li>
-            <li id="centretitle"><a href="#centre">Zentren</a></li>
-            <li><a href="#reisen">Studienreisen</a></li>
-            <li><a href="#aims">Vereinsziele</a></li>
             <li><a href="#home">Home</a></li>
+            <li id="centretitle"><a href="#centre">Zentren</a></li>
+            <li><a href="#aims">Vereinsziele</a></li>
+            <li><a href="#reisen">Studienreisen</a></li>
+            <li><a href="#mitglied">Mitglied werden</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#download">Downloads</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
@@ -248,7 +248,7 @@
           <p>Mit unseren Aktionen fördern wir vor allem den interkulturell-spirituellen Bildungsaustausch und die Entwicklung des geistig­-spirituellen Bewusstseins. Der durch die verschiedenen Methoden zu erreichende Erkenntnisgewinn kann dann zu individueller Bewusstseins­- und Wahrnehmungserweiterung führen.</p>
         </div>
         <div class="col-xs-12 col-md-6 column">
-          <h3 id="aims-satzung">Satzungsmäßig festgehaltene Vereinsziele:</h3>
+          <h3 id="aims-satzung"><a href="#downlist" title="Mehr information" id="downlist">Satzung</a>smäßig festgehaltene Vereinsziele:</h3>
           <ul id="aims-list">
           <li>
           Erforschung, Anwendung und Verbreitung der in verschiedenen indigenen Kulturen unterschiedlich ausgeprägten Heiltraditionen zur Förderung eines ganzheitlichen Verständnisses von Gesundheit und Spiritualität.
@@ -356,7 +356,7 @@
           <div class="panel-body">
             <div class="row">
                 <p>
-                  Im Rahmen dieser Studienreise stehen ethnologische Tagesausflüge z.B. zu Kraftorten in Pinar del Río und Trinidad (Sierra del Escambray) und den Aquáticos (Naturheilern aus einem kleinen Dorf in der Nähe von Viñales, die alle Krankheiten mit dem besonders energetisch-mineralhaltigen Wasser ihrer Bergquelle zu heilen vermögen) auf dem Programm. Es gibt vielerlei Gelegenheit sich von der Wirkung der bekanntesten Nachtschattengewächse Kubas ein Bild zu machen, z.B. im Tal von Viñales (UNESCO-Naturerbe) auf einer Tabakplantage, wo deren Weiterverarbeitung erklärt und gezeigt wird.
+                  Im Rahmen dieser Studienreise stehen ethnologische Tagesausflüge z.B. zu Kraftorten in Pinar del Río und Trinidad (Sierra del Escambray) und den Aquáticos (Naturheilern aus einem kleinen Dorf in der Nähe von Viñales, die alle Krankheiten mit dem besonders energetisch-mineralhaltigen Wasser ihrer Bergquelle zu heilen vermögen) auf dem Programm. Es gibt vielerlei Gelegenheit sich von der Wirkung der bekanntesten Nachtschattengewächse Kubas ein Bild zu machen, z.B. im Tal von Viñales (UNESCO-Naturerbe) auf einer Tabakplantage, wo deren Weiterverarbeitung erklärt und gezeigt wird, dann aber über den touristischen Rahmen hinaus ethnobotanische Aspekte einbezogen werden.
                 </p>
             </div>
           </div>
@@ -393,28 +393,34 @@
           <p>Der Mitgliedsbeitrag wurde auf der Gründungsveranstaltung am 21.07.2014 auf 3 €/Monat festgesetzt, zahlbar viertel-, halb- oder ganzjährig. Für Studenten beträgt der Jahresbeitrag 20 €. Die genauen Zahlungsmodalitäten entnehmen Sie bitte dem <a href="pdf/Mitgliedschaftsantrag.pdf">Aufnahmeantrag</a>. </p>
           <p><strong>Hinweis:</strong> Es sind ebenso 1-monatige kostenlose Probemitgliedschaften möglich.
           </p>
-        </div>
-        <div class="col-xs-12 col-sm-5">
           <h3>
             Unsere Kontoverbindung lautet:
           </h3>
           <ul id="konto">
             <li>Empfänger: Perceptika e.V.
             </li>
+            </li>
             <li>Kreditinstitut: Deutsche Skatbank Altenburger Land
             </li>
             <li>IBAN: DE35 8306 5408 0004 8851 12
             </li>
             <li>BIC (SWIFT-Code): GENO DEF1 SLR  
-            </li>
           </ul>
+        </div>
+        <div class="col-xs-12 col-sm-5" id="memberright">
+          <h3>
+            Spenden
+          </h3>
+            <p>Der Verein für Integrative Entwicklung Perceptika e.V. ist ein gemeinnütziger Verein im Sinne §§ 51 ff. AO. D.h.
+            Spenden und Zuwendungen aller Art können steuerlich abgesetzt werden.
+            </p>
         </div>
       </div> <!-- end row -->
     </div>
   </div> <!-- end container Mitgliedschaft -->
 
   <div class="container anchor" id="contact"> <!-- container contact -->
-    <div id="contactimage" data-stellar-background-ratio="0.5">
+    <div id="contactimage">
     <div class="row" >
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 column" id="contact-list">
           <h1>Kontakt</h1>
@@ -443,7 +449,7 @@
    </div> 
   </div> <!-- /container -->
 
-  <div class="container anchor" id="download"> <!-- container download -->
+  <div class="container anchor" data-stellar-background-ratio="0.1" id="download"> <!-- container download -->
     <div id="downloadimage"> 
       <br>
       <br>
@@ -499,8 +505,13 @@
   <script src="js/fullcalendar.js" type="text/javascript"></script>
   <script href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/css/bootstrap-modal.min.css"></script>
   <script src="js/jquery.stellar.min.js"></script>
+  <script>
+    $(function () {
+      $('#downlist').tooltip();
+    });
+  </script>
   <script> 
-    $('#contactimage').stellar();
+    $.stellar();
   </script>
       <script type="text/javascript">
       var $root = $('html, body');
@@ -592,7 +603,7 @@
                   title  : 'Toque de Santo',
                   start  : '2017-02-26T09:50:00',
                   allDay : false,
-                  description: "<p>Beiwohnen einer der religiösen Zeremonie, eines Toque de Santo</p>",
+                  description: "<p>Beiwohnen einer der religiösen Zeremonie kubanischer Prägung, eines Toque de Santo mit Möglichkeit der Reinigung, Entgiftung oder spezifische den angelsächsischen Lifestyle betreffend, psychologischen Stress, Burn-out sowie Stressbedingte oder sogenannte Zivilisationskrankheiten</p>",
               },     
               {
                   title  : 'Casa de Africa',
