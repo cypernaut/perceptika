@@ -97,6 +97,7 @@ h3 {
 
 #downloadimage {
 	background-image: url(../img/waterfall.jpg);
+ 	background-attachment: fixed;
  	background-size: cover;
  	background-repeat: no-repeat;
  	color: white;
@@ -225,9 +226,9 @@ h3 {
 	margin-top: 42px;
 }
 #contact-list ul {
-		list-style-type: none; 
-		margin-top: -37px;
-		margin-left: -12px;
+	list-style-type: none; 
+	margin-top: -37px;
+	margin-left: -12px;
 }
 
 #member {
