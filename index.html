@@ -54,10 +54,17 @@
         <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li id="centretitle"><a href="#centre">Zentren</a></li>
-            <li><a href="#aims">Vereinsziele</a></li>
-            <li><a href="#reisen">Studienreisen</a></li>
+            <li><a href="#home">Aktuelles</a></li>
+            <li><a href="#aims">Mission</a></li>
+            <li id="centretitle"><a href="#centre">Forschung</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true">Projekte<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#refugees">Geflüchtete</a></li>
+                <li><a href="#reisen">Studienreisen</a></li>
+              </ul>
+            </li>
+            <li><a href="#team">Team</a></li>
             <li><a href="#mitglied">Mitglied werden</a></li>
             <li><a href="#contact">Kontakt</a></li>
             <li><a href="#download">Downloads</a></li>
@@ -81,15 +88,14 @@
     </div><!-- /jumbotron -->
   </div>
 
-
-  <div class="container anchor" id="home"> <!-- container aims -->
+  <div class="container anchor" id="home"> <!-- container home -->
       <br>
       <div class="row">
         <div class="col-xs-12 col-md-6 column" id="support">
-          <h2>Wer sind wir?</h2>
+          <h2>Mission</h2>
           <p><strong>Förderung des spirituellen interkulturellen Austauschs</strong></p>
           <p>Der Verein für Integrative Entwicklung schafft eine gemeinsame Plattform, die über kulturelle und nationale Grenzen hinweg, Räume der spirituellen Verständigung über die großen Lebensfragen und die innere Natur des Menschen, eröffnet. Mit unseren Projekten fördern wir die Allgemeinheit auf geistigem, seelischem und sittlichem Gebiet und derzeit besonders den spirituellen interkulturellen Austausch.
-          <p><a class="btn btn-default" href="#aims-description" role="button">Mehr zu den Zielen unserer Arbeit erfahren &raquo;</a></p>
+          <p><a class="btn btn-default" href="#aims-description" role="button">Mehr zu den Zielen unserer Arbeit &raquo;</a></p>
         </div><!-- /col -->
         <div class="col-xs-12 col-md-6 column">
           <h2>Was machen wir?</h2>
@@ -100,10 +106,55 @@
       </div><!-- /row -->
   </div>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
+  
+
+  <div class="container anchor" id="team"> <!-- container team -->
+      <br>
+    <h1> Unser Team
+    </h1> 
+
+      <div class="row">
+  </div>
+
+   <div class="container anchor"> <!-- container aims -->
+    <div id="aims">
+    <br>
+    <br>
+    <h1> Ziele
+    </h1>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 column" id="aims-description">
+          <p>Durch einen interkulturellen Austausch von ganz neuer Qualität soll ein Beitrag zur positiven Veränderung der Gesellschaft geschaffen werden. PERCEPTIKA e.V. dient hierbei als „Interkultureller Dolmetscher“, welcher das nötige theoretische Wissen und dessen praktische Anwendung vermittelt. Dabei handelt es sich um altüberlieferte Wissensstrukturen, Lebensweisen und Werte, die die persönliche und spirituelle Weiterentwicklung des Menschen zum Ziel haben.</p>
+          <p>Mit unseren Aktionen fördern wir vor allem den interkulturell-spirituellen Bildungsaustausch und die Entwicklung des geistig­-spirituellen Bewusstseins. Der durch die verschiedenen Methoden zu erreichende Erkenntnisgewinn kann dann zu individueller Bewusstseins­- und Wahrnehmungserweiterung führen.</p>
+        </div>
+        <div class="col-xs-12 col-md-6 column">
+          <h3 id="aims-satzung">Satzungsmäßig festgehaltene <a href="#downlist" title="siehe Satzung">Vereinsziele</a></h3>
+          <ul id="aims-list">
+          <li>
+          Erforschung, Anwendung und Verbreitung der in verschiedenen indigenen Kulturen unterschiedlich ausgeprägten Heiltraditionen zur Förderung eines ganzheitlichen Verständnisses von Gesundheit und Spiritualität.
+          </li>
+          <li>
+          Sammlung und Weitervermittlung altüberlieferter Wissensstrukturen, Lebensweisen und Werte, die auf die persönliche und spirituelle Weiterentwicklung des Menschen abzielen
+          </li>
+          <li>
+          Förderung der Anwendung und Akzeptanz der global vielfältig ausgeprägten Heiltraditionen indigenen Ursprungs in Deutschland und Europa
+          </li>
+          <li>
+          Schaffung einer Plattform für einen breiten Austausch zwischen spirituell gesinnten Menschen, Wissenschaftlern, Heilpraktikern, Ärzten, Psychologen, Therapeuten, Künstlern und sonstigen spirituellen Praktikern 
+          </li>
+          <li>
+          Förderung spiritueller Verständiung über disziplinäre, nationale und kulturelle Grenzen hinweg
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- end row -->
+  </div><!-- end container aims -->
+
+
   <div class="container anchor" id="centre">
     <h1>
-    <a href="http://zas.perceptika.de">Zentrum für afrikanisches Heilwissen </a>
+    <a href="http://zas.perceptika.de">Erforschung des afrikanischen Heilwissen </a>
     </h1> 
     <br>
     <div class="jumbotron">
@@ -238,44 +289,30 @@
       </div>
     </div> <!-- /container fluid -->
   </div>
-  <div class="container anchor"> 
-    <div id="aims">
-    <br>
-    <br>
-    <h1> Vereinsziele 
-    </h1>
-    <div class="row">
-        <div class="col-xs-12 col-md-6 column" id="aims-description">
-          <p>Durch einen interkulturellen Austausch von ganz neuer Qualität soll ein Beitrag zur positiven Veränderung der Gesellschaft geschaffen werden. PERCEPTIKA e.V. dient hierbei als „Interkultureller Dolmetscher“, welcher das nötige theoretische Wissen und dessen praktische Anwendung vermittelt. Dabei handelt es sich um altüberlieferte Wissensstrukturen, Lebensweisen und Werte, die die persönliche und spirituelle Weiterentwicklung des Menschen zum Ziel haben.</p>
-          <p>Mit unseren Aktionen fördern wir vor allem den interkulturell-spirituellen Bildungsaustausch und die Entwicklung des geistig­-spirituellen Bewusstseins. Der durch die verschiedenen Methoden zu erreichende Erkenntnisgewinn kann dann zu individueller Bewusstseins­- und Wahrnehmungserweiterung führen.</p>
-        </div>
-        <div class="col-xs-12 col-md-6 column">
-          <h3 id="aims-satzung">Satzungsmäßig festgehaltene <a href="#downlist" title="siehe Satzung">Vereinsziele</a></h3>
-          <ul id="aims-list">
-          <li>
-          Erforschung, Anwendung und Verbreitung der in verschiedenen indigenen Kulturen unterschiedlich ausgeprägten Heiltraditionen zur Förderung eines ganzheitlichen Verständnisses von Gesundheit und Spiritualität.
-          </li>
-          <li>
-          Sammlung und Weitervermittlung altüberlieferter Wissensstrukturen, Lebensweisen und Werte, die auf die persönliche und spirituelle Weiterentwicklung des Menschen abzielen
-          </li>
-          <li>
-          Förderung der Anwendung und Akzeptanz der global vielfältig ausgeprägten Heiltraditionen indigenen Ursprungs in Deutschland und Europa
-          </li>
-          <li>
-          Schaffung einer Plattform für einen breiten Austausch zwischen spirituell gesinnten Menschen, Wissenschaftlern, Heilpraktikern, Ärzten, Psychologen, Therapeuten, Künstlern und sonstigen spirituellen Praktikern 
-          </li>
-          <li>
-          Förderung spiritueller Verständiung über disziplinäre, nationale und kulturelle Grenzen hinweg
-          </li>
-          </ul>
-        </div>
-      </div>
-    </div><!-- end row -->
-  </div><!-- end container aims -->
 
 
+  <div class="container anchor" id="refugees"> <!-- container Geflüchtete -->
+      <h1> Geflüchtete
+      </h1>
+                <div>
+                <button class="btn btn-info" data-toggle="modal" data-target=".bs-enteredkey-modal-lg">Projekt "Integration von Geflüchteten"</button>
+          </div>    
+          <div class="modal fade bs-enteredkey-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h2>Integration von Geflüchteten über interkulturelle Wahrnehmungswelten</h2>
+                  </div>
+                  <div class="modal-body">
+                      <embed id="buttondiv" src="pdf/Integration.pdf">
+                  </div>
+              </div>
+            </div>
+          </div>
+  </div>
   <div class="container anchor" id="reisen"> <!-- container Reisen -->
-      <h1> Studienreisen nach Kuba
+      <h1> Studienreisen
       </h1>
       <div id="bootstrapModalFullCalendar">
         <div id="fullCalModal" class="modal fade">
@@ -287,18 +324,20 @@
                   </div>
                   <div id="modalBody" class="modal-body"></div>  
                   <div class="modal-footer">
+                      <button id="examplebutton" class="btn btn-default">Book event</button>
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button id="rincon" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-md">Video</button>
+                      <button id="videobutton" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-md">Video</button>
                    </div>
               </div>
           </div>
         </div>
-
+<br>
+<br>
        <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-info-sign"></span>
-              Lernen Sie die Anziehungskraft des immateriellen Kulturerbes Kubas kennen!
+              Kubas immaterielles Kulturerbe 
             </a>
           </h4>
 
@@ -307,10 +346,11 @@
               <div class="modal-content">
                   <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>  
-                            <h2 lang="en">Rincon</h2>
+                            <h2>Video</h2>
                   </div>
                   <div class="modal-body">
-                    <iframe width="420" height="237" src="//www.youtube.com/embed/C8aUu-0wX6I" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="video1" width="420" height="237" src="//www.youtube.com/embed/C8aUu-0wX6I" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="video2" width="420" height="237" src="//www.youtube.com/embed/C8aUu-gfgfdg" frameborder="0" allowfullscreen></iframe>
                   </div>
               </div>
             </div>
@@ -318,9 +358,15 @@
         </div>
 
         </div>
-        <div id="collapseOne" class="panel-collapse collapse in">
+        <div id="collapseOne" class="panel-collapse collapse out">
           <div class="panel-body">
-                
+                  <h2>Lernen Sie das immaterielle Kulturerbe Kubas kennen!
+                  </h2>
+                  <br>
+                  <h4>Angeboten wird eine Kombination von Studien- und Therapiereise zu den Ursprüngen der afrikanischen Heiltradition in Kuba. </h4>
+                  <h4>wissenschaftliche Begleitung: Dr. Cornelius Griep</h4>
+                  <h4>Zeitraum: 01.-09.10.2017</h4>
+                  <h4><a href="#reisen"> weitere Informationen</h4>
           </div>
         </div>
         <div class="panel panel-default">
@@ -332,8 +378,16 @@
             </h4>
           </div>
         </div>
-        <div id="collapseTwo" class="panel-collapse collapse in">
+        <div id="collapseTwo" class="panel-collapse collapse out">
           <div class="panel-body">
+                   <h2> Therapie durch Kunst, Religion und folkloristische Musik und Tänze
+                   </h2>
+                   <br>
+                   <h4>Die kubanischen Rhythmen erfreut sich weltweit sehr großer Beliebtheit. Die trance-zendente Erfahrung der afrokubanischen Percussion-Instrumente birgt eine jahrhundertelange Heiltradition afrikanischen Ursprungs, auf die heutzutage auch immer mehr Europäer für therapeutische Zwecke zurückgreifen, um Ruhe und Frieden zu finden.
+                  <h4>wissenschaftliche Begleitung: Dr. Cornelius Griep</h4>
+                  <h4>Zeitraum: 10.-18.10.2017</h4>
+                  <h4><a href="#reisen"> weitere Informationen</h4>
+          </h4>
           <div class="row">
           <div class="col-md-8" id="studyTwo">
             
@@ -353,9 +407,17 @@
           </h4>
           </div>
         </div>
-        <div id="collapseThree" class="panel-collapse collapse in">
+        <div id="collapseThree" class="panel-collapse collapse out">
           <div class="panel-body">
             <div class="row">
+                    <h2> Abenteuerreise durch Kuba
+                   </h2>
+                   <br>
+                   <h4>Rollende Hügel von braun-grünem Gras, eine Brise, die den Geruch eines anderes Jahrhunderts trägt und Tropenwälder, wo sich zur Dämmerung der Gesang des tiefblauen Tocororo (Nationalvogel Kubas) und karibische Rhythmen aus einem fernen, blechern schallenden Radio ablösen. Neben dem pulsierenden Leben der farbenfrohen Städte gibt es geheimnisvolle Orte, die als Inspiration und Grundlage des farbenfrohen Lebens andernorts dienen. Ihre Geheimnisse werden nur von einigen wenigen gehütet und der normale Inseltourismus bleibt ihnen fern. Doch genau hier lohnt es sich genauer hin zu sehen, mit Geheimnishütern durch Palmenwälder und um Wasserfälle zu streifen, sich vom süßen Duft der Tropenblumen betören zu lassen und die süßen Früchte zu genießen, die etliche Pflanzen scheinbar nur für dich bereit halten.
+                  <h4>Begleitung (in Englisch): Roman Gutierrez</h4>
+                  <h4>Zeitraum: 29.10.-04.11.2017</h4>
+                  <h4><a href="#reisen"> weitere Informationen</h4>
+          </h4>
             </div>
           </div>
         </div>
@@ -368,9 +430,17 @@
             </h4>
           </div>
         </div>
-        <div id="collapseFour" class="panel-collapse collapsed">
+        <div id="collapseFour" class="panel-collapse collapse out">
           <div class="panel-body">
-            
+            <div class="row">
+        <h2> Phytotherapie in Kuba
+                   </h2>
+                   <br>
+                  <h4>wissenschaftliche Begleitung: Dr. Cornelius Griep</h4>
+                   <h4>Altüberliefertes afrikanisches Pflanzenwissen, das sich über den kubanisch-folkloristischen Volksglaubens Santería bis heute bewahrt hat, erfährt seit den 1990er Jahren einen rasanten Aufschwung. Selbst das viel gelobt Gesundheitssystem Kubas greift aus einer Vielzahl an Gründen seitdem auf Pflanzenkunde und alternative medizinische Ansätze zurück. 
+                  <h4>Zeitraum: 05.-06.10.2017</h4>
+                  <h4><a href="#reisen"> weitere Informationen</h4></a>
+            </div>
           </div>
         </div>
       </div> <!-- acordion id -->
@@ -448,7 +518,7 @@
   </div> <!-- /container -->
 
   <div class="container anchor" id="download"> <!-- container download -->
-    <div data-stellar-background-ratio="0.5" id="downloadimage"> 
+    <div id="downloadimage">
       <br>
       <br>
       <br>
@@ -458,7 +528,8 @@
           <br>
           <br>
           <ul id="downlist">
-          <li>Satzung des Vereins für Integrative Entwicklung PERCEPTIKA e.V. <a href="pdf/Satzung.pdf">herunterladen</a>
+          <li>
+          Satzung des Vereins für Integrative Entwicklung PERCEPTIKA e.V. <a href="pdf/Satzung.pdf">herunterladen</a>
           </li>
           <li>Mitgliedsantrag <a href="pdf/Mitgliedschaftsantrag.pdf">herunterladen</a>
           </li>
@@ -479,14 +550,14 @@
       <div class="container"> 
       <div class="jumbotron">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-2" id="footing1">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-2 col-md-offset-1 fb-like" data-href="https://facebook.com/perceptika.de" data-width="35" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+          <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-md-2 col-md-offset-1" id="footing1">
            <a href="#contact"> Impressum </a>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-2 col-md-offset-1">
           <a href="https://twitter.com/vperceptika" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @vperceptika</a> 
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1 fb-like" data-href="https://facebook.com/perceptika.de" data-width="35" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
-          <div class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1 pull-right" id="footing2">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-2 col-md-offset-1 pull-right" id="footing2">
             <p>&copy; Perceptika 2016</p>
           </div>
         </div> 
@@ -529,7 +600,7 @@
   <script type="text/javascript">
   $(document).ready(function() {
   // page is ready
-  var d = new Date(Date.now()+10 * 30 * 24 * 60 * 60 * 1000);
+  var d = new Date(Date.now()+10.5 * 24 * 24 * 60 * 60 * 1000);
       $('#bootstrapModalFullCalendar').fullCalendar({
         date: d,
         // events: 'events.json',
@@ -542,19 +613,40 @@
           right: 'month,agendaWeek,agendaDay'
         },
         eventClick:  function(event, jsEvent, view) {
+            if (event.whatever) {
+              $('#examplebutton').click(function(e) {
+                alert(event.whatever)
+              })
+            } else {
+              $('#examplebutton').hide()
+            }
+            // vorigen 7 Zeilen: zeigt den Button nur an wenn er definiert ist, d.h. ein Wert für ihn im event existiert. nachzuprüfen mit console.log(event.whatever)
             $('#modalTitle').html(event.title);
             $('#modalBody').html(event.description);
             $('#eventUrl').attr('href',event.url);
             $('#fullCalModal').modal();
+// versucht html element mit Class active-video zu finden und weist es der Variable activeVideo zu 
+            activeVideo = document.querySelector('.active-video')
+            if (activeVideo) {
+              activeVideo.style.display = 'none'
+              activeVideo.classList.remove('active-video')
+            }
+// wenn activeVideo existiert, versteckt er das dom element und löscht die class active-video aus dem dom element
+            activeVideo = document.getElementById(event.videoID)
+// nimmt den wert der videoID aus dem events block             
+            activeVideo.style.display = 'block';
+            activeVideo.classList.add('active-video') 
         },
              events: [
               {
-                      title  :"Block 1: Heilung und Spiritualität",
+                      title  :"Block 1: Heilung und Spiritualität in Kuba",
                       allday :"false",
                       description :"<p>Angeboten wird eine Kombination von Studien- und Therapiereise zu den Ursprüngen der afrikanischen Heiltradition in Kuba. Während der Reise fungiert Dr. Cornelius Griep als wissenschaftliche Begleitung, führt ein in die kubanische Geschichte und Kultur und stellt den Kontakt zu Santería-Priestern und geweihten Trommlern für therapeutische Zwecke her.</p><p>Individuelle Trommel- und Heilrituale sind auf Wunsch möglich. Ebenso wird es Gelegenheit geben geweihten IFÁ-Priestern bei der Arbeit über die Schulter zu schauen (auf Wunsch können Konsultationen und Reinigungszeremonien durchgeführt werden), wobei der kulturgeschichtliche Hintergrund dieser Heilsysteme erklärt, und darüber hinaus aufzeigt wird, wie diese sich etabliert und in das kubanische Weltbild intergriert haben, ohne dass sie heutzutage Widersprüche zur Schulmedizin darstellen.</p>",
                       start  : '2017-10-01',
                       end    : '2017-10-10',
-                      className : "block"
+                      className : "block",
+                      videoID: "video1",
+                      whatever: "Buchbar ab April 2017"
               },
               {
                   title  : "Block 3: Kubas historisches, kulturelles und politisches Erbe",
@@ -562,10 +654,11 @@
                   start  : '2017-10-19', 
                   end    : '2017-10-29',
                   url    : '#collapseOne',
-                  className : "block"
+                  className : "block",
+                  videoID: "video2"
               },
               {
-                  title  : 'Block 2: Kunst, Musik und Tanz',
+                  title  : 'Block 2: Kunst, Musik und Tanz in Kuba',
                   start  : '2017-10-10',
                   end    : '2017-10-19',
                   description: "<p>Die kubanischen Rhythmen erfreut sich weltweit sehr großer Beliebtheit. Die trance-zendente Erfahrung der afrokubanischen Percussion-Instrumente birgt eine jahrhundertelange Heiltradition afrikanischen Ursprungs, auf die heutzutage auch immer mehr Europäer für therapeutische Zwecke zurückgreifen, um Ruhe und Frieden zu finden.</p>",
@@ -581,48 +674,55 @@
                   // url    : '#collapseThree',
                   className : "block"
               },
-              {
+/*              {
                   title  : 'afrikanische Traditionen',
                   start  : '2017-10-02',
                   end    : '2017-10-08',
                   className : "modul"
               },
-              {
+*/              {
                   title  : 'Aquáticos',
                   start  : '2017-10-29',
                   end    : '2017-10-31',
                   className : "modul",
                   description: "<p>Im Rahmen dieses Moduls steht ein ethnologischer Ausflug zu verschiedenen Kraftorten in Pinar del Río, wie El Pan de Guajaibón, den Aquáticos (Naturheilern aus einem kleinen Dorf in der Nähe von Viñales, die alle Krankheiten mit dem besonders energetisch-mineralhaltigen Wasser ihrer Bergquelle zu heilen vermögen). Es gibt vielerlei Gelegenheit sich von der Wirkung der bekanntesten Nachtschattengewächse Kubas ein Bild zu machen, z.B. im Tal von Viñales (UNESCO-Naturerbe) auf einer Tabakplantage, wo deren Weiterverarbeitung erklärt und gezeigt wird, dann aber über den touristischen Rahmen hinaus ethnobotanische Aspekte einbezogen werden.</p>"
               },
+                {
+                  title  : 'Phytotherapie',
+                  start  : '2017-10-05',
+                  end    : '2017-10-07',
+                  className : "modul",
+                  description: "<p>In zunehmendem Maße kommt in Kuba alternatives und afrikanisches Pflanzenwissen des kubanisch-folkloristisches Volksglaubens Santería zu Heilzwecken zur Anwendung. Im Rahmen dieses Moduls wird auf die Verbindung altüberlieferten und neuem alternativen phytotherepeutischen Wissen eingegangen.</p>"
+              },
               {
-                  title  : 'Topes de Collantes',
+                  title  : '420 - Topes de Collantes',
                   start  : '2017-11-02',
                   end    : '2017-11-04',
                   className : "modul",
                   description: "<p>Im Rahmen dieses Moduls steht ein ethnologischer Ausflug in den Sierra del Escambray zu Kraftorten wie Topes de Collantes.</p>"
               },
               {
-                  title  : 'Trommelzeremonie',
+                  title  : '210 - Trommelzeremonie',
                   start  : '2017-10-15',
                   end    : '2017-10-18',
                   className : "modul",
                   description: "<p>Innerhalb der afrokubanischen Traditionen, erfreuen sich Trommelzeremonien immer größerer Beliebtheit. Besuche des Callejón de Hamel, auf Wunsch auch spirituell-religiöser Trommelzeremonien stehen auf dem Programm.</p>"
               },
               {
-                  title  : 'Callejón de Hamel',
+                  title  : '202 - Callejón de Hamel',
                   start  : '2017-10-15T10:30:00',
                   end    : '2017-10-15T15:00:00',
                   allDay : false, // will make the time show
                   description: "<p>Besuche des Callejón de Hamel, auf Wunsch auch spirituell-religiöser Trommelzeremonien stehen auf dem Programm.</p>"
               },
               {
-                  title  : 'Toque de Santo',
+                  title  : '204 - Toque de Santo',
                   start  : '2017-10-17T09:50:00',
                   allDay : false,
                   description: "<p>Beiwohnen einer der religiösen Zeremonie kubanischer Prägung, eines Toque de Santo mit Möglichkeit der Reinigung, Entgiftung oder spezifische den angelsächsischen Lifestyle betreffend, psychologischen Stress, Burn-out sowie Stressbedingte oder sogenannte Zivilisationskrankheiten</p>",
               },     
               {
-                  title  : 'Casa de Africa',
+                  title  : '203 - Casa de Africa',
                   start  : '2017-10-16T19:30:00',
                   allDay : false,
                   description: "Besuch der casa de África in Habana Vieja"
